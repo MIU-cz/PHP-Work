@@ -6,5 +6,8 @@ function showForm(event) {
 }
 
 function trSelect(event) {
-	event.target.classList.toggle('selected');
+	event.currentTarget.classList.toggle('selected');
+
+	console.log(event.target);
+	console.log(event.currentTarget);
 }

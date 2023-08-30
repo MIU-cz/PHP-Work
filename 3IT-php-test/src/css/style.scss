@@ -1,6 +1,8 @@
 body {
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 	font-size: inherit;
+
+	padding: 20px;
 }
 
 @mixin Flexible($fd: column, $jc: center, $aln: normal, $gap: 5px) {
@@ -12,7 +14,14 @@ body {
 }
 
 .main__adm_koutek {
-	margin: 5px auto auto 5px;
+	margin: 5px auto 20px;
+
+	@media (min-width: 768px) {
+		position: absolute;
+		top: 20px;
+		left: 5px;
+	}
+
 	max-width: 200px;
 	padding: 20px 10px;
 	border: 2px solid darkblue;
@@ -70,7 +79,7 @@ body {
 		border: 2px solid darkblue;
 		border-radius: 10px;
 	}
-	tr {
+	.table_row {
 		&:first-child {
 			background-color: lightslategrey;
 			a {
@@ -80,6 +89,10 @@ body {
 
 		&:nth-child(n + 2) {
 			background-color: lightgray;
+
+			&.selected {
+				background-color: lightseagreen;
+			}
 
 			&:hover {
 				background-color: lightblue;
@@ -107,9 +120,6 @@ p {
 // ======================
 
 // for table
-.selected {
-	background-color: lightseagreen;
-}
 
 // for admin block
 .hide {

@@ -1,14 +1,22 @@
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: inherit;
+  padding: 20px;
 }
 
 .main__adm_koutek {
-  margin: 5px auto auto 5px;
+  margin: 5px auto 20px;
   max-width: 200px;
   padding: 20px 10px;
   border: 2px solid darkblue;
   border-radius: 5px;
+}
+@media (min-width: 768px) {
+  .main__adm_koutek {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+  }
 }
 .main__adm_koutek h2 {
   font-size: 1.2em;
@@ -63,16 +71,19 @@ body {
   border: 2px solid darkblue;
   border-radius: 10px;
 }
-.content tr:first-child {
+.content .table_row:first-child {
   background-color: lightslategrey;
 }
-.content tr:first-child a {
+.content .table_row:first-child a {
   color: white;
 }
-.content tr:nth-child(n+2) {
+.content .table_row:nth-child(n+2) {
   background-color: lightgray;
 }
-.content tr:nth-child(n+2):hover {
+.content .table_row:nth-child(n+2).selected {
+  background-color: lightseagreen;
+}
+.content .table_row:nth-child(n+2):hover {
   background-color: lightblue;
 }
 .content td,
@@ -85,10 +96,6 @@ p.good {
 }
 p.err {
   color: red;
-}
-
-.selected {
-  background-color: lightseagreen;
 }
 
 .hide {

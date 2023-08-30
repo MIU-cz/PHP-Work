@@ -57,7 +57,7 @@
 				if ($table->num_rows > 0) {
 					while ($row = $table->fetch_assoc()) {
 						echo '
-						<tr>
+						<tr class="table_row" onclick="trSelect(event)">
 						<td>' . $row['id'] . '</td>
 						<td>' . $row['jmeno'] . '</td>
 						<td>' . $row['prijmeni'] . '</td>
