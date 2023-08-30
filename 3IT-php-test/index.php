@@ -14,7 +14,9 @@
 <body>
 	<div class="main__adm_koutek">
 		<div class="brand">
-			<img src="./src/img/3it_small.png" alt="brand-logo">
+			<a href="https://www.3it.cz/" target="_blank">
+				<img src="./src/img/3it_small.png" alt="brand-logo">
+			</a>
 		</div>
 		<h2>administrátorský koutek</h2>
 		<ul class="adm__koutek_links">
