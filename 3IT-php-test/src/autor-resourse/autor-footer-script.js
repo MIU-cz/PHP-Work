@@ -9,7 +9,7 @@ const footer =
 		<ul>
 
 			<li><a href="https://mehal.my.canva.site" target="_blank" title="Business card">
-					<img src="./components/autor.png" alt="smm-ico">
+					<img src="./src/autor-resourse/autor.png" alt="smm-ico">
 				</a></li>
 
 			<li><a href="https://www.facebook.com/mehaligor.cz" target="_blank" title="Facebook">
@@ -48,7 +48,6 @@ const footer =
     `;
 
 const addFooter = () => {
-	// let footerBlock = document.getElementsByClassName('autor')[0];
 	let footerBlock = document.getElementById('autor');
 	footerBlock.innerHTML = footer;
 }

@@ -1,9 +1,3 @@
-body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: inherit;
-  padding: 20px;
-}
-
 .main__adm_koutek {
   margin: 5px auto 20px;
   max-width: 200px;
@@ -24,6 +18,15 @@ body {
   text-transform: uppercase;
   color: darkblue;
   border-bottom: 1px solid darkblue;
+}
+.main__adm_koutek .brand {
+  width: 65%;
+  margin: 0 auto;
+}
+.main__adm_koutek .brand img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .adm__koutek_links {
@@ -61,8 +64,15 @@ body {
   display: none;
 }
 
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: inherit;
+  padding: 20px 0 0;
+}
+
 .container {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .content {

@@ -1,0 +1,72 @@
+@mixin Flexible($fd: column, $jc: center, $aln: normal, $gap: 5px) {
+	display: flex;
+	flex-direction: $fd;
+	justify-content: $jc;
+	align-items: $aln;
+	gap: $gap;
+}
+
+.main__adm_koutek {
+	margin: 5px auto 20px;
+
+	@media (min-width: 768px) {
+		position: absolute;
+		top: 20px;
+		left: 5px;
+	}
+
+	max-width: 200px;
+	padding: 20px 10px;
+	border: 2px solid darkblue;
+	border-radius: 5px;
+
+	h2 {
+		font-size: 1.2em;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: darkblue;
+		border-bottom: 1px solid darkblue;
+	}
+
+	.brand {
+		width: 65%;
+		margin: 0 auto;
+
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+.adm__koutek_links {
+	margin-top: 10px;
+	@include Flexible();
+
+	li {
+		text-transform: uppercase;
+
+		&:hover {
+			background-color: aquamarine;
+		}
+	}
+}
+
+.adm__koutek_form {
+	margin-top: 10px;
+	@include Flexible();
+
+	button {
+		padding: 5px 10px;
+		border-radius: 10px;
+
+		&:hover {
+			background-color: aquamarine;
+		}
+	}
+}
+
+// js toggle classes for admin block
+.hide {
+	display: none;
+}

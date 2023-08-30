@@ -7,7 +7,4 @@ function showForm(event) {
 
 function trSelect(event) {
 	event.currentTarget.classList.toggle('selected');
-
-	console.log(event.target);
-	console.log(event.currentTarget);
 }

@@ -1,71 +1,10 @@
+@import "_adm_koutek";
+
 body {
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 	font-size: inherit;
 
-	padding: 20px;
-}
-
-@mixin Flexible($fd: column, $jc: center, $aln: normal, $gap: 5px) {
-	display: flex;
-	flex-direction: $fd;
-	justify-content: $jc;
-	align-items: $aln;
-	gap: $gap;
-}
-
-.main__adm_koutek {
-	margin: 5px auto 20px;
-
-	@media (min-width: 768px) {
-		position: absolute;
-		top: 20px;
-		left: 5px;
-	}
-
-	max-width: 200px;
-	padding: 20px 10px;
-	border: 2px solid darkblue;
-	border-radius: 5px;
-
-	h2 {
-		font-size: 1.2em;
-		font-weight: 600;
-		text-transform: uppercase;
-		color: darkblue;
-		border-bottom: 1px solid darkblue;
-	}
-}
-
-.adm__koutek_links {
-	margin-top: 10px;
-	@include Flexible();
-
-	li {
-		text-transform: uppercase;
-
-		&:hover {
-			background-color: aquamarine;
-		}
-	}
-}
-
-.adm__koutek_form {
-	margin-top: 10px;
-	@include Flexible();
-
-	button {
-		padding: 5px 10px;
-		border-radius: 10px;
-
-		&:hover {
-			background-color: aquamarine;
-		}
-	}
-}
-
-// js toggle classes for admin block
-.hide {
-	display: none;
+	padding: 20px 0 0;
 }
 
 // main table content
@@ -73,6 +12,7 @@ body {
 
 .container {
 	width: 100%;
+	margin-bottom: 20px;
 }
 
 .content {
@@ -87,6 +27,7 @@ body {
 	.table_row {
 		&:first-child {
 			background-color: lightslategrey;
+
 			a {
 				color: white;
 			}
@@ -112,7 +53,7 @@ body {
 	}
 }
 
-// for php messages
+// for php-script messages
 p {
 	&.good {
 		color: green;

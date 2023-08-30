@@ -5,17 +5,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>3IT PHP-Test - MIU</title>
-	<link rel="shortcut icon" href="src/img/x192-150x150.png" type="image/png">
-	<link rel="stylesheet" href="src/autor-resourse/my-normaliz-style-min.css">
-	<link rel="stylesheet" href="src/css/style.css">
-	<link rel="stylesheet" href="src/autor-resourse/autor-footer-style.css">
+	<link rel="shortcut icon" href="./src/img/x192-150x150.png" type="image/png">
+	<link rel="stylesheet" href="./src/autor-resourse/my-normaliz-style-min.css">
+	<link rel="stylesheet" href="./src/css/style.css">
+	<link rel="stylesheet" href="./src/autor-resourse/autor-footer-style.css">
 </head>
 
 <body>
 	<div class="main__adm_koutek">
+		<div class="brand">
+			<img src="./src/img/3it_small.png" alt="brand-logo">
+		</div>
 		<h2>administrátorský koutek</h2>
 		<ul class="adm__koutek_links">
-			<li><a href="engine/generatedb.php">vytvořit DB</a></li>
+			<li><a href="./engine/generatedb.php">vytvořit DB</a></li>
 			<li><a href="#" onclick="showForm(event)">nahrát soubor seznamu</a></li>
 		</ul>
 		<form class="adm__koutek_form hide" id="fileForm" enctype="multipart/form-data" method="post" action="engine/addfile.php">
@@ -34,7 +37,7 @@
 	<main class="container">
 		<div class="content">
 			<table>
-				<tr>
+				<tr class="table_row">
 					<th><a href="?sort=id">id</a></th>
 					<th><a href="?sort=jmeno">Jmeno</a></th>
 					<th><a href="?sort=prijmeni">Prijmeni</a></th>
@@ -42,7 +45,7 @@
 				</tr>
 
 				<?php
-				include "engine/linkdb.php";
+				include "./engine/linkdb.php";
 				$db->select_db($base);
 
 				if (!isset($_GET['sort'])) {
@@ -76,8 +79,13 @@
 		</div>
 	</main>
 
+	<footer>
+		<div class="autor" id="autor"></div>
+	</footer>
 
-	<script src="js/mainscript.js"></script>
+	<script src="./js/mainscript.js"></script>
+	<script src="./src/autor-resourse/autor-footer-script.js"></script>
+
 </body>
 
 </html>
