@@ -15,7 +15,7 @@
 	<div class="main__adm_koutek">
 		<h2>administrátorský koutek</h2>
 		<ul class="adm__koutek_links">
-			<li><a href="">vytvořit DB</a></li>
+			<li><a href="engine/generatedb.php">vytvořit DB</a></li>
 			<li><a href="#" onclick="showForm(event)">nahrát soubor seznamu</a></li>
 		</ul>
 		<form class="adm__koutek_form hide" id="fileForm" enctype="multipart/form-data" method="post" action="engine/addfile.php">
