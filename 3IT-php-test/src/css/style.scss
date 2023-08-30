@@ -3,7 +3,7 @@ body {
 	font-size: inherit;
 }
 
-@mixin Flexible($fd: column, $jc: center, $aln: normal, $gap: unset) {
+@mixin Flexible($fd: column, $jc: center, $aln: normal, $gap: 5px) {
 	display: flex;
 	flex-direction: $fd;
 	justify-content: $jc;
@@ -23,10 +23,21 @@ body {
 		font-weight: 600;
 		text-transform: uppercase;
 		color: darkblue;
+		border-bottom: 1px solid darkblue;
+	}
+
+	p {
+		&.good {
+			color: green;
+		}
+		&.err {
+			color: red;
+		}
 	}
 }
 
 .adm__koutek_links {
+	margin-top: 10px;
 	@include Flexible();
 
 	li {

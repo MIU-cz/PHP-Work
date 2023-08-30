@@ -15,14 +15,22 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   color: darkblue;
+  border-bottom: 1px solid darkblue;
+}
+.main__adm_koutek p.good {
+  color: green;
+}
+.main__adm_koutek p.err {
+  color: red;
 }
 
 .adm__koutek_links {
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: normal;
-  gap: unset;
+  gap: 5px;
 }
 .adm__koutek_links li {
   text-transform: uppercase;
@@ -37,7 +45,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: normal;
-  gap: unset;
+  gap: 5px;
 }
 .adm__koutek_form button {
   padding: 5px 10px;

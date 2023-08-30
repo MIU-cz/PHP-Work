@@ -18,10 +18,17 @@
 			<li><a href="">vytvořit DB</a></li>
 			<li><a href="#" onclick="showForm(event)">nahrát soubor seznamu</a></li>
 		</ul>
-		<form class="adm__koutek_form hide" enctype="multipart/form-data" method="post" id="fileForm">
-			<input type="file" name="my_file"> <br>
+		<form class="adm__koutek_form hide" id="fileForm" enctype="multipart/form-data" method="post" action="engine/addfile.php">
+			<input type="file" name="seznam" required>
 			<button type="submit">nahrát soubor</button>
 		</form>
+		<div class="adm__koutek_msg">
+			<?php
+			if (isset($_GET['msg'])) {
+				echo $_GET['msg'];
+			}
+			?>
+		</div>
 	</div>
 
 
