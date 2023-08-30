@@ -17,12 +17,6 @@ body {
   color: darkblue;
   border-bottom: 1px solid darkblue;
 }
-.main__adm_koutek p.good {
-  color: green;
-}
-.main__adm_koutek p.err {
-  color: red;
-}
 
 .adm__koutek_links {
   margin-top: 10px;
@@ -53,6 +47,48 @@ body {
 }
 .adm__koutek_form button:hover {
   background-color: aquamarine;
+}
+
+.container {
+  width: 100%;
+}
+
+.content {
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+}
+.content table {
+  padding: 5px 10px;
+  border: 2px solid darkblue;
+  border-radius: 10px;
+}
+.content tr:first-child {
+  background-color: lightslategrey;
+}
+.content tr:first-child a {
+  color: white;
+}
+.content tr:nth-child(n+2) {
+  background-color: lightgray;
+}
+.content tr:nth-child(n+2):hover {
+  background-color: lightblue;
+}
+.content td,
+.content th {
+  padding: 2px 5px;
+}
+
+p.good {
+  color: green;
+}
+p.err {
+  color: red;
+}
+
+.selected {
+  background-color: lightseagreen;
 }
 
 .hide {

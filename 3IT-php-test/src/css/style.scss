@@ -25,15 +25,6 @@ body {
 		color: darkblue;
 		border-bottom: 1px solid darkblue;
 	}
-
-	p {
-		&.good {
-			color: green;
-		}
-		&.err {
-			color: red;
-		}
-	}
 }
 
 .adm__koutek_links {
@@ -63,6 +54,64 @@ body {
 	}
 }
 
+// main table content
+// ==================
+
+.container {
+	width: 100%;
+}
+
+.content {
+	width: max-content;
+	margin: 0 auto;
+
+	table {
+		padding: 5px 10px;
+		border: 2px solid darkblue;
+		border-radius: 10px;
+	}
+	tr {
+		&:first-child {
+			background-color: lightslategrey;
+			a {
+				color: white;
+			}
+		}
+
+		&:nth-child(n + 2) {
+			background-color: lightgray;
+
+			&:hover {
+				background-color: lightblue;
+			}
+		}
+	}
+
+	td,
+	th {
+		padding: 2px 5px;
+	}
+}
+
+// for php messages
+p {
+	&.good {
+		color: green;
+	}
+	&.err {
+		color: red;
+	}
+}
+
+// js toggle classes
+// ======================
+
+// for table
+.selected {
+	background-color: lightseagreen;
+}
+
+// for admin block
 .hide {
 	display: none;
 }

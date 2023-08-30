@@ -31,6 +31,51 @@
 		</div>
 	</div>
 
+	<main class="container">
+		<div class="content">
+			<table>
+				<tr>
+					<th><a href="?sort=id">id</a></th>
+					<th><a href="?sort=jmeno">Jmeno</a></th>
+					<th><a href="?sort=prijmeni">Prijmeni</a></th>
+					<th><a href="?sort=datum">Datum</a></th>
+				</tr>
+
+				<?php
+				include "engine/linkdb.php";
+				$db->select_db($base);
+
+				if (!isset($_GET['sort'])) {
+					$query = "SELECT * FROM `zaznamy` ORDER BY `id` ASC";
+				} else {
+					$sort = $_GET['sort'];
+					$query = "SELECT * FROM `zaznamy` ORDER BY `$sort` ASC";
+				}
+
+				$table = $db->query($query);
+
+				if ($table->num_rows > 0) {
+					while ($row = $table->fetch_assoc()) {
+						echo '
+						<tr>
+						<td>' . $row['id'] . '</td>
+						<td>' . $row['jmeno'] . '</td>
+						<td>' . $row['prijmeni'] . '</td>
+						<td>' . $row['datum'] . '</td>
+						</tr>
+						';
+					}
+				} else {
+					echo '<tr><td colspan = 4>
+					<p class="err">nic tu není.. <br>stáhněte si seznam ke zpracování..</p>
+					</td></tr>';
+				}
+				?>
+
+			</table>
+		</div>
+	</main>
+
 
 	<script src="js/mainscript.js"></script>
 </body>
