@@ -1,0 +1,52 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: inherit;
+}
+
+.main__adm_koutek {
+  margin: 5px auto auto 5px;
+  max-width: 200px;
+  padding: 20px 10px;
+  border: 2px solid darkblue;
+  border-radius: 5px;
+}
+.main__adm_koutek h2 {
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: darkblue;
+}
+
+.adm__koutek_links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: normal;
+  gap: unset;
+}
+.adm__koutek_links li {
+  text-transform: uppercase;
+}
+.adm__koutek_links li:hover {
+  background-color: aquamarine;
+}
+
+.adm__koutek_form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: normal;
+  gap: unset;
+}
+.adm__koutek_form button {
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.adm__koutek_form button:hover {
+  background-color: aquamarine;
+}
+
+.hide {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

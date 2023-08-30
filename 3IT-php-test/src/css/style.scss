@@ -1,0 +1,57 @@
+body {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	font-size: inherit;
+}
+
+@mixin Flexible($fd: column, $jc: center, $aln: normal, $gap: unset) {
+	display: flex;
+	flex-direction: $fd;
+	justify-content: $jc;
+	align-items: $aln;
+	gap: $gap;
+}
+
+.main__adm_koutek {
+	margin: 5px auto auto 5px;
+	max-width: 200px;
+	padding: 20px 10px;
+	border: 2px solid darkblue;
+	border-radius: 5px;
+
+	h2 {
+		font-size: 1.2em;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: darkblue;
+	}
+}
+
+.adm__koutek_links {
+	@include Flexible();
+
+	li {
+		text-transform: uppercase;
+
+		&:hover {
+			background-color: aquamarine;
+		}
+	}
+}
+
+.adm__koutek_form {
+	margin-top: 10px;
+	@include Flexible();
+
+	button {
+		padding: 5px 10px;
+		border-radius: 10px;
+
+		&:hover {
+			background-color: aquamarine;
+		}
+	}
+}
+
+.hide {
+	display: none;
+}
