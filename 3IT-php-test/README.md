@@ -6,7 +6,7 @@
 
 - Popis práce na projektu: <https://miu-cz.github.io/PHP-Work/3IT-php-test/>
 - GitHub: <https://github.com/MIU-cz/PHP-Work/tree/main/3IT-php-test>
-- Deploy: <http://miu.jecool.net/new_sites/3IT-php-test/index.php/>
+- Deploy: <http://miu.jecool.net/new_sites/3IT-php-test/index.php>
 
 ## Aplikace vyvinutá v čistém php + mySql + scss
 
