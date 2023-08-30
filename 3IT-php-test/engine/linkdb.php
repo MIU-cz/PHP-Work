@@ -10,4 +10,4 @@ $db = new mysqli($host, $name, $pass);
 // $host = 'endora-db-01.stable.cz';
 // $name = 'marfadmin';
 // $pass = '3NRU2SWgh5t@6qa';
-// $base = '3it-test';
+// $base = '3ittest';

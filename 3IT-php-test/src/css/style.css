@@ -84,6 +84,7 @@ body {
   padding: 5px 10px;
   border: 2px solid darkblue;
   border-radius: 10px;
+  font-size: 1.2em;
 }
 .content .table_row:first-child {
   background-color: lightslategrey;
