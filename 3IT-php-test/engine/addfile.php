@@ -2,7 +2,7 @@
 if (isset($_FILES['seznam'])) {
 	if (is_uploaded_file($_FILES['seznam']['tmp_name'])) {
 		$fileName = $_FILES['seznam']['name'];
-		$dir = '3IT-php-test/src/db/';
+		$dir = '../src/db/';
 		$file = $dir . $fileName;
 
 		if (move_uploaded_file($_FILES['seznam']['tmp_name'], $file)) {
