@@ -63,6 +63,11 @@ body {
 	}
 }
 
+// js toggle classes for admin block
+.hide {
+	display: none;
+}
+
 // main table content
 // ==================
 
@@ -90,12 +95,13 @@ body {
 		&:nth-child(n + 2) {
 			background-color: lightgray;
 
-			&.selected {
-				background-color: lightseagreen;
-			}
-
 			&:hover {
 				background-color: lightblue;
+			}
+
+			// js toggle classes for table
+			&.selected {
+				background-color: lightseagreen;
 			}
 		}
 	}
@@ -114,14 +120,4 @@ p {
 	&.err {
 		color: red;
 	}
-}
-
-// js toggle classes
-// ======================
-
-// for table
-
-// for admin block
-.hide {
-	display: none;
 }

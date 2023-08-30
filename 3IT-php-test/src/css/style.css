@@ -57,6 +57,10 @@ body {
   background-color: aquamarine;
 }
 
+.hide {
+  display: none;
+}
+
 .container {
   width: 100%;
 }
@@ -80,11 +84,11 @@ body {
 .content .table_row:nth-child(n+2) {
   background-color: lightgray;
 }
-.content .table_row:nth-child(n+2).selected {
-  background-color: lightseagreen;
-}
 .content .table_row:nth-child(n+2):hover {
   background-color: lightblue;
+}
+.content .table_row:nth-child(n+2).selected {
+  background-color: lightseagreen;
 }
 .content td,
 .content th {
@@ -96,8 +100,4 @@ p.good {
 }
 p.err {
   color: red;
-}
-
-.hide {
-  display: none;
 }/*# sourceMappingURL=style.css.map */
