@@ -1,5 +1,6 @@
 <?php
-require "_header-items.php";
+require '_header-items.php';
+require '_smm-bar.php';
 ?>
 
 <div class="header__container">
@@ -48,3 +49,5 @@ require "_header-items.php";
 		?>
 	</ul>
 </nav>
+
+<script src="./src/js/_header.js"></script>
