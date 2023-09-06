@@ -1,6 +1,10 @@
 @import "../../components/autor-resourse/my-normaliz-style-min.css";
 @import "_theme", "_btns";
+@import "_Header";
 
 body {
 	@include fontStyle($fs: 14px);
+	@media (min-width: 982px) {
+		padding: 0 15px;
+	}
 }

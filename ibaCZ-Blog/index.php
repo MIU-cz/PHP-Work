@@ -10,6 +10,9 @@
 </head>
 
 <body>
+	<header class="wraper">
+		<?php include "./components/_Header.php"; ?>
+	</header>
 
 </body>
 

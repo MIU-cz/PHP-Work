@@ -1,5 +1,5 @@
 .main_btn {
-	padding: 0.3em 0.7em;
+	padding: 0.35em 0.75em;
 	border: 1px solid $c-blue-grayest;
 	border-radius: 20px;
 	background: $c-main-white;
@@ -14,7 +14,7 @@
 }
 
 .tag_btn {
-	padding: 0.3em 0.7em;
+	padding: 0.35em 0.75em;
 	border: 0;
 	border-radius: 10px;
 	background: $main-gradient;
@@ -23,7 +23,7 @@
 }
 
 .rounded_btn {
-	padding: 0.3em;
+	padding: 0.35em;
 	border: 0;
 	border-radius: 50%;
 	background: $main-gradient;
@@ -36,5 +36,14 @@
 .rounded_btn {
 	&:hover {
 		background: $c-red-lightest;
+	}
+}
+
+.smm_btn {
+	@include Flexyble();
+	color: $c-main-blue;
+
+	&:hover {
+		color: $c-main-red;
 	}
 }
