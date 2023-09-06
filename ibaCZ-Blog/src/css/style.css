@@ -1,0 +1,65 @@
+@import "../../components/autor-resourse/my-normaliz-style-min.css";
+@font-face {
+  font-family: "Roboto-Regular";
+  src: local("Roboto-Regular"), url(../fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+}
+.main_btn {
+  padding: 0.3em 0.7em;
+  border: 1px solid hsl(217, 16%, 68%);
+  border-radius: 20px;
+  background: hsl(0, 0%, 100%);
+  font-family: "Roboto-Regular";
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: normal;
+  line-height: normal;
+  color: hsl(217, 16%, 68%);
+}
+.main_btn:hover {
+  border-color: hsl(349, 92%, 66%);
+  background: linear-gradient(90deg, hsl(349, 92%, 66%) 0%, hsl(10, 92%, 76%) 100%);
+  color: hsl(0, 0%, 100%);
+}
+
+.tag_btn {
+  padding: 0.3em 0.7em;
+  border: 0;
+  border-radius: 10px;
+  background: linear-gradient(90deg, hsl(349, 92%, 66%) 0%, hsl(10, 92%, 76%) 100%);
+  font-family: "Roboto-Regular";
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: normal;
+  line-height: normal;
+  color: hsl(0, 0%, 100%);
+}
+
+.rounded_btn {
+  padding: 0.3em;
+  border: 0;
+  border-radius: 50%;
+  background: linear-gradient(90deg, hsl(349, 92%, 66%) 0%, hsl(10, 92%, 76%) 100%);
+  font-family: "Roboto-Regular";
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: normal;
+  line-height: normal;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tag_btn:hover,
+.rounded_btn:hover {
+  background: hsl(10, 92%, 76%);
+}
+
+body {
+  font-family: "Roboto-Regular";
+  font-size: 14px;
+  font-weight: inherit;
+  letter-spacing: normal;
+  line-height: normal;
+  color: hsl(216, 46%, 23%);
+}/*# sourceMappingURL=style.css.map */

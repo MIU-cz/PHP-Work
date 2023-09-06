@@ -1,0 +1,6 @@
+@import "../../components/autor-resourse/my-normaliz-style-min.css";
+@import "_theme", "_btns";
+
+body {
+	@include fontStyle($fs: 14px);
+}

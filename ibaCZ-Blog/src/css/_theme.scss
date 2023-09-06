@@ -1,5 +1,38 @@
+@font-face {
+	font-family: "Roboto-Regular";
+	src: local("Roboto-Regular"),
+		url(../fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+}
+
+// ## COLORS THEME
 $c-main-blue: hsl(216, 46%, 23%);
 $c-main-white: hsl(0, 0%, 100%);
 $c-main-red: hsl(349, 92%, 66%);
 $c-red-lightest: hsl(10, 92%, 76%);
 $c-blue-grayest: hsl(217, 16%, 68%);
+$main-gradient: linear-gradient(90deg, $c-main-red 0%, $c-red-lightest 100%);
+
+// ## Variables:
+$ff-main: "Roboto-Regular";
+
+@mixin fontStyle(
+	$ff: $ff-main,
+	$fs: inherit,
+	$fw: inherit,
+	$ls: normal,
+	$lh: normal,
+	$color: $c-main-blue
+) {
+	font-family: $ff;
+	font-size: $fs;
+	font-weight: $fw;
+	letter-spacing: $ls;
+	line-height: $lh;
+	color: $color;
+}
+
+@mixin Flexyble() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

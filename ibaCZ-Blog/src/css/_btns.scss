@@ -1,0 +1,40 @@
+.main_btn {
+	padding: 0.3em 0.7em;
+	border: 1px solid $c-blue-grayest;
+	border-radius: 20px;
+	background: $c-main-white;
+
+	@include fontStyle($color: $c-blue-grayest);
+
+	&:hover {
+		border-color: $c-main-red;
+		background: $main-gradient;
+		color: $c-main-white;
+	}
+}
+
+.tag_btn {
+	padding: 0.3em 0.7em;
+	border: 0;
+	border-radius: 10px;
+	background: $main-gradient;
+
+	@include fontStyle($color: $c-main-white);
+}
+
+.rounded_btn {
+	padding: 0.3em;
+	border: 0;
+	border-radius: 50%;
+	background: $main-gradient;
+
+	@include fontStyle($color: $c-main-white);
+	@include Flexyble();
+}
+
+.tag_btn,
+.rounded_btn {
+	&:hover {
+		background: $c-red-lightest;
+	}
+}
