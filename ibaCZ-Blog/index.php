@@ -13,6 +13,9 @@
 	<header class="wraper">
 		<?php include "./components/_Header.php"; ?>
 	</header>
+	<slider>
+		<?php include "./components/_Post-slider.php"; ?>
+	</slider>
 
 </body>
 
