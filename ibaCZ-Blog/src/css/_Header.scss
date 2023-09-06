@@ -84,6 +84,10 @@
 		height: 36px;
 		@include Flexyble();
 
+		svg {
+			pointer-events: none;
+		}
+
 		&:nth-child(2) {
 			position: relative;
 
@@ -95,6 +99,8 @@
 				width: 70%;
 				height: 1px;
 				background-color: $c-main-white;
+
+				transition: transform 0.3s;
 			}
 
 			&::before {
@@ -118,18 +124,48 @@
 	}
 }
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// do it later ...
+// ## Header Btns Containers
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 .search_container {
+	min-width: 20em;
+	position: absolute;
+	margin-top: 20px;
+	top: 100%;
+	z-index: 101;
+	padding: 1em;
+	border-radius: 10px;
+	background-color: $c-main-white;
+	box-shadow: 0 0 10px 0 $c-blue-grayest;
+
+	.search_form {
+		@include Flexyble();
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 10px;
+
+		.searchStr {
+			width: 100%;
+		}
+	}
 }
+
 .menu_container {
+	width: 160px;
+	position: absolute;
+	margin-top: 20px;
+	top: 100%;
+	z-index: 101;
+	padding: 1em;
+	border-radius: 10px;
+	background-color: $c-main-white;
+	box-shadow: 0 0 10px 0 $c-blue-grayest;
 }
+
 .hide {
 	display: none;
 }
 
-// #navBar menu
+// ## navBar menu
 // ======================
 .header__navBar {
 	width: 100%;
