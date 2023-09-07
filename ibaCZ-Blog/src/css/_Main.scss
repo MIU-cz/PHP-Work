@@ -1,0 +1,18 @@
+.main__container {
+	width: 100%;
+	display: grid;
+	grid-auto-flow: row;
+	gap: 25px;
+
+	@media (min-width: 1200px) {
+		grid-template-columns: 2fr 1fr;
+	}
+}
+
+.main__content {
+	@include Flexyble();
+}
+
+.aside__content {
+	@include Flexyble();
+}

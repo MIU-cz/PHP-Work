@@ -32,11 +32,22 @@
 	.item_description {
 		@include Flexyble();
 		flex-direction: row;
-		gap: 20px;
+		gap: 15px;
 
 		@include fontStyle($color: $c-blue-grayest);
 
 		.item_autor {
+			@include Flexyble();
+
+			&::after {
+				content: "";
+				display: inline-block;
+				margin-left: 15px;
+				width: 5px;
+				height: 5px;
+				border-radius: 50%;
+				background-color: $c-blue-grayest;
+			}
 		}
 		.item_date {
 		}
