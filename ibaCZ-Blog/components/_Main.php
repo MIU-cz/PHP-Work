@@ -31,6 +31,17 @@ $colPost = 10;
 		<?php
 		for ($i = 1; $i <= $colPost; $i++) {
 			$tagIndx = round(rand(0, 4));
+			$colectionIndx = round(rand(0, 2));
+
+			if ($i % 3 == 1) {
+				$colectionBtn = '
+						<button class="rounded_btn" name="post-collection-">
+							' . $colection[$colectionIndx] . '
+						</button>
+				';
+			} else {
+				$colectionBtn = '';
+			}
 
 			echo '
 				<div class="main__item_container">
@@ -41,6 +52,10 @@ $colPost = 10;
 								<button class="tag_btn" name="post-tag-' . $tag[$tagIndx] . '">
 								' . $tag[$tagIndx] . '
 								</button>
+							</div>
+
+							<div class="item_tag_collection"> 	
+							' . $colectionBtn . '							
 							</div>
 						</div>					
 
@@ -62,7 +77,7 @@ $colPost = 10;
 							<div class="item_title">
 								<h3>' . $postItem['title'] . '</h3>
 							</div>
-							
+
 							<div class="item_text">
 								<p>' . $postItem['text'] . '</p>
 							</div>
@@ -80,5 +95,7 @@ $colPost = 10;
 
 	</div>
 
-	<div class="aside__content"></div>
+	<div class="aside__content">
+
+	</div>
 </div>

@@ -479,6 +479,14 @@
   top: 20px;
   left: 20px;
 }
+.main__content .item_foto .item_tag_collection {
+  position: absolute;
+  right: 20px;
+  bottom: -16px;
+}
+.main__content .item_foto .item_tag_collection .rounded_btn {
+  padding: 10px;
+}
 .main__content .item_content {
   padding: 20px;
   display: flex;
