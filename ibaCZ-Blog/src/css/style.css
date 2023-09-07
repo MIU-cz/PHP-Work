@@ -1,4 +1,5 @@
 @import "../../components/autor-resourse/my-normaliz-style-min.css";
+@import "../../components/autor-resourse/autor-footer-style.css";
 @font-face {
   font-family: "Roboto-Regular";
   src: local("Roboto-Regular"), url(../fonts/Roboto/Roboto-Regular.ttf) format("truetype");

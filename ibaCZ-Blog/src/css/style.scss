@@ -1,6 +1,7 @@
 @import "../../components/autor-resourse/my-normaliz-style-min.css";
 @import "_theme", "_btns";
 @import "_Header", "_Post-slider", "_Main", "_Footer";
+@import "../../components/autor-resourse/autor-footer-style.css";
 
 body {
 	@include fontStyle($fs: 14px);

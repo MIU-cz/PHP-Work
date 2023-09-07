@@ -22,10 +22,12 @@
 		<?php include "./components/_Main.php"; ?>
 	</main>
 
-	<footer>
-
+	<footer class="wraper">
+		<?php include "./components/_Footer.php"; ?>
+		<div id="autor"></div>
 	</footer>
 
+	<script src="./components/autor-resourse/autor-footer-script.js"></script>
 </body>
 
 </html>
