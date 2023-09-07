@@ -47,3 +47,22 @@
 		color: $c-main-red;
 	}
 }
+
+.pagBtn {
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	background: $c-blue-grayest;
+
+	&:hover,
+	&:active {
+		width: 30px;
+		background: $main-gradient;
+	}
+
+	@media (min-width: 768px) {
+		&:nth-child(n + 4) {
+			display: none;
+		}
+	}
+}

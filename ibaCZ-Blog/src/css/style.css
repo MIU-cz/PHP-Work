@@ -14,6 +14,12 @@
   }
 }
 
+.wraper_fluid {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .main_btn {
   padding: 0.35em 0.75em;
   border: 1px solid hsl(217, 16%, 68%);
@@ -74,6 +80,22 @@
 }
 .smm_btn:hover {
   color: hsl(349, 92%, 66%);
+}
+
+.pagBtn {
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background: hsl(217, 16%, 68%);
+}
+.pagBtn:hover, .pagBtn:active {
+  width: 30px;
+  background: linear-gradient(90deg, hsl(349, 92%, 66%) 0%, hsl(10, 92%, 76%) 100%);
+}
+@media (min-width: 768px) {
+  .pagBtn:nth-child(n+4) {
+    display: none;
+  }
 }
 
 .header__container {
@@ -247,7 +269,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (min-width: 576px) {
+  .header__navBar .navbar_menu {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 .header__navBar .navbar_menu .menu_item {
   position: relative;
@@ -319,6 +348,66 @@
   width: 100%;
   height: 1px;
   background: linear-gradient(90deg, hsl(217, 16%, 68%) 0%, rgba(160, 170, 186, 0.1) 80%);
+}
+
+.slider_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.slider_item_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 300px;
+  height: 350px;
+  padding: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: no-repeat center/cover;
+}
+
+.item_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.item_content .item_title {
+  font-family: "Roboto-Regular";
+  font-size: 1.2em;
+  font-weight: inherit;
+  letter-spacing: normal;
+  line-height: normal;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  text-align: center;
+}
+.item_content .item_description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  font-family: "Roboto-Regular";
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: normal;
+  line-height: normal;
+  color: hsl(217, 16%, 68%);
+}
+.pag_btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  padding: 40px;
 }
 
 body {

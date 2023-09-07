@@ -1,0 +1,51 @@
+.slider_container {
+	@include Flexyble();
+	flex-wrap: wrap;
+	gap: 25px;
+}
+
+.slider_item_container {
+	@include Flexyble();
+	flex-shrink: 0;
+	width: 300px;
+	height: 350px;
+	padding: 40px;
+	border-radius: 10px;
+	overflow: hidden;
+	background: no-repeat center / cover;
+}
+
+.item_content {
+	@include Flexyble();
+	flex-direction: column;
+	gap: 20px;
+
+	.item_tag {
+	}
+
+	.item_title {
+		@include fontStyle($fs: 1.2em, $color: $c-main-white);
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	.item_description {
+		@include Flexyble();
+		flex-direction: row;
+		gap: 20px;
+
+		@include fontStyle($color: $c-blue-grayest);
+
+		.item_autor {
+		}
+		.item_date {
+		}
+	}
+}
+
+.pag_btns {
+	@include Flexyble();
+	gap: 15px;
+	width: 100%;
+	padding: 40px;
+}

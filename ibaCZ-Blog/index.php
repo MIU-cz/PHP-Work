@@ -13,7 +13,7 @@
 	<header class="wraper">
 		<?php include "./components/_Header.php"; ?>
 	</header>
-	<slider>
+	<slider class="wraper_fluid">
 		<?php include "./components/_Post-slider.php"; ?>
 	</slider>
 
