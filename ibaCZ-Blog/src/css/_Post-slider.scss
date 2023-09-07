@@ -13,43 +13,43 @@
 	border-radius: 10px;
 	overflow: hidden;
 	background: no-repeat center / cover;
-}
 
-.item_content {
-	@include Flexyble();
-	flex-direction: column;
-	gap: 20px;
-
-	.item_tag {
-	}
-
-	.item_title {
-		@include fontStyle($fs: 1.2em, $color: $c-main-white);
-		text-transform: uppercase;
-		text-align: center;
-	}
-
-	.item_description {
+	.item_content {
 		@include Flexyble();
-		flex-direction: row;
-		gap: 15px;
+		flex-direction: column;
+		gap: 20px;
 
-		@include fontStyle($color: $c-blue-grayest);
-
-		.item_autor {
-			@include Flexyble();
-
-			&::after {
-				content: "";
-				display: inline-block;
-				margin-left: 15px;
-				width: 5px;
-				height: 5px;
-				border-radius: 50%;
-				background-color: $c-blue-grayest;
-			}
+		.item_tag {
 		}
-		.item_date {
+
+		.item_title {
+			@include fontStyle($fs: 1.2em, $color: $c-main-white);
+			text-transform: uppercase;
+			text-align: center;
+		}
+
+		.item_description {
+			@include Flexyble();
+			flex-direction: row;
+			gap: 15px;
+
+			@include fontStyle($color: $c-blue-grayest);
+
+			.item_autor {
+				@include Flexyble();
+
+				&::after {
+					content: "";
+					display: inline-block;
+					margin-left: 15px;
+					width: 5px;
+					height: 5px;
+					border-radius: 50%;
+					background-color: $c-blue-grayest;
+				}
+			}
+			.item_date {
+			}
 		}
 	}
 }

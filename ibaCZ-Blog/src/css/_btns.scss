@@ -72,3 +72,12 @@
 		background: $main-gradient;
 	}
 }
+
+.post_btn {
+	background: none;
+
+	&:hover,
+	&:active {
+		color: $c-red-lightest;
+	}
+}
