@@ -92,10 +92,15 @@
   width: 30px;
   background: linear-gradient(90deg, hsl(349, 92%, 66%) 0%, hsl(10, 92%, 76%) 100%);
 }
-@media (min-width: 768px) {
-  .pagBtn:nth-child(n+4) {
-    display: none;
-  }
+
+.pagBtnBig {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: hsl(10, 92%, 76%);
+}
+.pagBtnBig:hover, .pagBtnBig:active {
+  background: linear-gradient(90deg, hsl(349, 92%, 66%) 0%, hsl(10, 92%, 76%) 100%);
 }
 
 .header__container {
@@ -408,6 +413,11 @@
   gap: 15px;
   width: 100%;
   padding: 40px;
+}
+@media (min-width: 768px) {
+  .pag_btns .pagBtn:nth-child(n+4) {
+    display: none;
+  }
 }
 
 body {

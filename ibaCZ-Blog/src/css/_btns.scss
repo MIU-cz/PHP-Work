@@ -59,10 +59,16 @@
 		width: 30px;
 		background: $main-gradient;
 	}
+}
 
-	@media (min-width: 768px) {
-		&:nth-child(n + 4) {
-			display: none;
-		}
+.pagBtnBig {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background: $c-red-lightest;
+
+	&:hover,
+	&:active {
+		background: $main-gradient;
 	}
 }

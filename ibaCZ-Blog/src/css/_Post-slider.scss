@@ -48,4 +48,10 @@
 	gap: 15px;
 	width: 100%;
 	padding: 40px;
+
+	@media (min-width: 768px) {
+		.pagBtn:nth-child(n + 4) {
+			display: none;
+		}
+	}
 }

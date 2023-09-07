@@ -13,9 +13,18 @@
 	<header class="wraper">
 		<?php include "./components/_Header.php"; ?>
 	</header>
+
 	<slider class="wraper_fluid">
 		<?php include "./components/_Post-slider.php"; ?>
 	</slider>
+
+	<main class="wraper">
+		<?php include "./components/_Main.php"; ?>
+	</main>
+
+	<footer>
+
+	</footer>
 
 </body>
 
