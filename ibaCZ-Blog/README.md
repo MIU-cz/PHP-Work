@@ -1,0 +1,3 @@
+- GitHub: <https://github.com/MIU-cz/PHP-Work/tree/main/ibaCZ-Blog>
+- Deploy: <http://miu.jecool.net/new_sites/ibaCZ-Blog/index.php>
+- Figma: <https://www.figma.com/file/XDXv9gJugZT7o9LDZ1UhpH/ibaCZ-Blog?type=design&node-id=1%3A14&mode=design&t=rdAte9VmPb49cM0q-1>
