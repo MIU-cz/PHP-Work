@@ -265,6 +265,10 @@ $postItemAside = [
 </div>
 
 <div class="instagram_container">
+	<div class="instagram_btns">
+		<button class="tag_btn">@Cube on Instagram</button>
+	</div>
+
 	<div class="instagram_content">
 		<?php
 		for ($i = 1; $i <= 6; $i++) {
@@ -277,10 +281,6 @@ $postItemAside = [
 			';
 		}
 		?>
-	</div>
-
-	<div class="instagram_btns">
-		<button class="tag_btn">@Cube on Instagram</button>
 	</div>
 
 </div>

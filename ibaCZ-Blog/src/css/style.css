@@ -901,6 +901,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 20px;
   position: relative;
 }
 .instagram_container .instagram_content {
@@ -916,12 +918,16 @@
 }
 .instagram_container .instagram_content .insta_item {
   flex-grow: 0;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .instagram_container .instagram_content .insta_item img {
   width: 100%;
 }
-.instagram_container .instagram_btns {
-  position: absolute;
+@media (min-width: 992px) {
+  .instagram_container .instagram_btns {
+    position: absolute;
+  }
 }
 
 .footer_container {

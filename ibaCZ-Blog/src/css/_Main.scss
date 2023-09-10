@@ -431,6 +431,8 @@
 	width: 100%;
 	margin-top: 40px;
 	@include Flexyble();
+	flex-direction: column;
+	gap: 20px;
 	position: relative;
 
 	.instagram_content {
@@ -443,6 +445,8 @@
 
 		.insta_item {
 			flex-grow: 0;
+			border-radius: 10px;
+			overflow: hidden;
 
 			img {
 				width: 100%;
@@ -451,6 +455,8 @@
 	}
 
 	.instagram_btns {
-		position: absolute;
+		@media (min-width: 992px) {
+			position: absolute;
+		}
 	}
 }
