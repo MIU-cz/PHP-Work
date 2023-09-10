@@ -12,9 +12,10 @@ $postItem = [
 ?>
 
 <div class="slider_container">
-	<?php
-	foreach ($tag as $tagName) {
-		echo '
+	<div class="slider_wraper">
+		<?php
+		foreach ($tag as $tagName) {
+			echo '
 			<div class="slider_item_container" style="background-image: url(' . $postItem['img'] . ')">
 				<div class="item_content">
 					<div class="item_tag">
@@ -31,8 +32,9 @@ $postItem = [
 			</div>	
 			
 		';
-	}
-	?>
+		}
+		?>
+	</div>
 </div>
 
 <div class="pag_btns">
