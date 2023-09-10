@@ -70,7 +70,8 @@
 	background: $c-blue-grayest;
 
 	&:hover,
-	&:active {
+	&:active,
+	&.active {
 		width: 30px;
 		background: $main-gradient;
 	}

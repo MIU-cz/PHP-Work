@@ -41,9 +41,11 @@ $postItem = [
 	<?php
 	for ($i = 0; $i < count($tag); $i++) {
 		echo '
-			<button class="pagBtn" name="pag-btn-' . $tag[$i] . '"></button>
+			<button class="pagBtn" name="pag-btn-' . $i . '" data-slide="' . $i . '"></button>
 		';
 	}
 	?>
 
 </div>
+
+<script src="./src/js/_slider-top.js"></script>

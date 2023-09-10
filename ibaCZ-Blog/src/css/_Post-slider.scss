@@ -1,13 +1,14 @@
 .slider_container {
-	@include Flexyble();
+	// @include Flexyble();
 	// flex-wrap: wrap;
+	overflow: hidden;
 }
 
 .slider_wraper {
-	overflow: hidden;
 	@include Flexyble();
 	justify-content: flex-start;
 	gap: 25px;
+	transition: transform 0.5s linear;
 }
 
 .slider_item_container {
@@ -20,19 +21,23 @@
 	overflow: hidden;
 	background: no-repeat center / cover;
 
+	// &:not(:last-child) {
+	// 	margin-right: 15px;
+	// }
+
 	width: 100%;
 
 	@media (min-width: 576px) {
-		width: calc(100% / 2 - 25px / 2);
+		width: calc((100% - 25px) / 2);
 	}
 	@media (min-width: 768px) {
-		width: calc(100% / 3 - 25px / 3 - 15px);
+		width: calc((100% - 25px * 2) / 3);
 	}
 	@media (min-width: 1200px) {
-		width: calc(100% / 4 - 25px / 4 - 15px);
+		width: calc((100% - 25px * 3) / 4);
 	}
 	@media (min-width: 1400px) {
-		width: calc(100% / 5 - 25px / 5 - 15px);
+		width: calc((100% - 25px * 4) / 5);
 	}
 
 	.item_content {
