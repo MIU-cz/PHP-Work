@@ -132,7 +132,7 @@ $postItemAside = [
 						<img src="' . $postItemAside['foto'] . '" alt="' . $postItemAside['foto'] . '">
 					</div>
 					<div class="item_description">
-						<h2>' . $postItemAside['title'] . '</h2>
+						<h2><a href="">' . $postItemAside['title'] . '</a></h2>
 						<p>' . $postItemAside['date'] . '</p>
 					</div>
 				</div>
@@ -156,7 +156,7 @@ $postItemAside = [
 							<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
 						</svg>
 					</div>
-					<div class="topic_title">topic-title-' . ($i + 1) . '</div>
+					<div class="topic_title"><a href="">topic-title-' . ($i + 1) . '</a></div>
 					<div class="topic_counts">(' . (round(rand(1, 10))) . ')</div>
 				</div>
 				';

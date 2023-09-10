@@ -123,6 +123,9 @@
 	}
 }
 
+// ASIDE Section
+// ===================
+
 .aside__content {
 	width: 100%;
 	@include Flexyble();
@@ -176,11 +179,26 @@
 				@include Flexyble();
 				justify-content: flex-start;
 				gap: 15px;
-				border-bottom: 1px solid $c-blue-grayest;
+				// border-bottom: 1px solid $c-blue-grayest;
 				padding-bottom: 20px;
+				position: relative;
 
-				&:last-child {
-					border: 0;
+				// &:last-child {
+				// 	border: 0;
+				// }
+
+				&:not(:last-child)::after {
+					content: "";
+					position: absolute;
+					bottom: 0;
+					display: block;
+					width: 100%;
+					height: 1px;
+					background: linear-gradient(
+						90deg,
+						$c-blue-grayest 0%,
+						transparentize($color: $c-blue-grayest, $amount: 0.9) 70%
+					);
 				}
 
 				&_foto {
@@ -198,8 +216,18 @@
 
 				&_description {
 					h2 {
-						@include fontStyle($fs: 1.3em, $fw: 900);
-						text-transform: capitalize;
+						// @include fontStyle($fs: 1.3em, $fw: 900);
+						// text-transform: capitalize;
+						a {
+							display: block;
+							width: 100%;
+							@include fontStyle($fs: 1.3em, $fw: 900);
+							text-transform: capitalize;
+
+							&:hover {
+								color: $c-red-lightest;
+							}
+						}
 					}
 					p {
 						@include fontStyle($color: $c-blue-grayest);
@@ -214,16 +242,42 @@
 				@include Flexyble();
 				justify-content: flex-start;
 
-				border-bottom: 1px solid $c-blue-grayest;
+				// border-bottom: 1px solid $c-blue-grayest;
 				padding-bottom: 20px;
+				position: relative;
+
+				&:after {
+					content: "";
+					position: absolute;
+					bottom: 0;
+					display: block;
+					width: 100%;
+					height: 1px;
+					background: linear-gradient(
+						90deg,
+						$c-blue-grayest 0%,
+						transparentize($color: $c-blue-grayest, $amount: 0.9) 70%
+					);
+				}
 
 				.item_deco {
 					color: $c-main-red;
+					@include Flexyble();
 				}
 
 				.topic_title {
-					@include fontStyle($fs: 1.3em, $fw: 900);
-					text-transform: capitalize;
+					width: 100%;
+
+					a {
+						display: block;
+						width: 100%;
+						@include fontStyle($fs: 1.3em, $fw: 900);
+						text-transform: capitalize;
+
+						&:hover {
+							color: $c-red-lightest;
+						}
+					}
 				}
 
 				.topic_counts {
