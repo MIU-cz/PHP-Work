@@ -32,11 +32,31 @@
   letter-spacing: normal;
   line-height: normal;
   color: hsl(217, 16%, 68%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main_btn:hover {
   border-color: hsl(349, 92%, 66%);
   background: linear-gradient(90deg, hsl(349, 92%, 66%) 0%, hsl(10, 92%, 76%) 100%);
   color: hsl(0, 0%, 100%);
+}
+
+.form_btn {
+  padding: 0.35em 0.75em;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background: linear-gradient(90deg, hsl(349, 92%, 66%) 0%, hsl(10, 92%, 76%) 100%);
+  font-family: "Roboto-Regular";
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: normal;
+  line-height: normal;
+  color: hsl(0, 0%, 100%);
+}
+.form_btn:hover {
+  border-color: hsl(349, 92%, 66%);
+  background: hsl(349, 92%, 66%);
 }
 
 .tag_btn {
@@ -97,11 +117,23 @@
 .pagBtnBig {
   width: 44px;
   height: 44px;
+  border: 1px solid hsl(217, 16%, 68%);
   border-radius: 50%;
-  background: hsl(10, 92%, 76%);
+  background: hsl(0, 0%, 100%);
+  font-family: "Roboto-Regular";
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: normal;
+  line-height: normal;
+  color: hsl(217, 16%, 68%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .pagBtnBig:hover, .pagBtnBig:active {
   background: linear-gradient(90deg, hsl(349, 92%, 66%) 0%, hsl(10, 92%, 76%) 100%);
+  color: hsl(0, 0%, 100%);
+  border-color: hsl(349, 92%, 66%);
 }
 
 .post_btn {
@@ -453,6 +485,20 @@
   }
 }
 
+.main_pagBtn_container {
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.main_pagBtn_container .pagBtnBig:first-child {
+  background: linear-gradient(90deg, hsl(349, 92%, 66%) 0%, hsl(10, 92%, 76%) 100%);
+  color: hsl(0, 0%, 100%);
+  border-color: hsl(349, 92%, 66%);
+}
+
 .main__content {
   display: grid;
   grid-auto-flow: row;
@@ -725,6 +771,158 @@
   line-height: normal;
   color: hsl(217, 16%, 68%);
 }
+.aside__content .aside_item_container.news_item .form_container {
+  width: 100%;
+  text-align: center;
+}
+.aside__content .aside_item_container.news_item .form_title {
+  font-family: "Roboto-Regular";
+  font-size: 1.3em;
+  font-weight: 900;
+  letter-spacing: normal;
+  line-height: normal;
+  color: hsl(216, 46%, 23%);
+}
+.aside__content .aside_item_container.news_item .form_content {
+  width: 100%;
+  margin-top: 20px;
+}
+.aside__content .aside_item_container.news_item .form_content form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.aside__content .aside_item_container.news_item .form_content form input,
+.aside__content .aside_item_container.news_item .form_content form button {
+  width: 100%;
+  padding: 10px 20px;
+}
+.aside__content .aside_item_container.news_item .form_content form input {
+  border: 1px solid hsl(217, 16%, 68%);
+  border-radius: 20px;
+  color: hsl(217, 16%, 68%);
+  text-align: center;
+}
+.aside__content .aside_item_container.celebrate_item .item_foto {
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.aside__content .aside_item_container.celebrate_item .item_foto img {
+  width: 100%;
+}
+.aside__content .aside_item_container.celebrate_item .item_foto .item_tag {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.aside__content .aside_item_container.celebrate_item .item_content {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+}
+.aside__content .aside_item_container.celebrate_item .item_content .item_title h4 {
+  font-family: "Roboto-Regular";
+  font-size: 1.7em;
+  font-weight: 900;
+  letter-spacing: normal;
+  line-height: normal;
+  color: hsl(216, 46%, 23%);
+  text-transform: capitalize;
+}
+.aside__content .aside_item_container.celebrate_item .item_content .item_autor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  font-family: "Roboto-Regular";
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: normal;
+  line-height: normal;
+  color: hsl(217, 16%, 68%);
+}
+.aside__content .aside_item_container.celebrate_item .item_content .item_autor .autor_name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aside__content .aside_item_container.celebrate_item .item_content .item_autor .autor_name::after {
+  content: "";
+  display: inline-block;
+  margin-left: 15px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: hsl(349, 92%, 66%);
+}
+.aside__content .aside_item_container.celebrate_item .item_btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.aside__content .aside_item_container.celebrate_item .item_btns .post_btn {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid hsl(217, 16%, 68%);
+  border-radius: 50%;
+}
+.aside__content .aside_item_container.celebrate_item .item_btns .post_btn:hover {
+  border-color: hsl(10, 92%, 76%);
+}
+.aside__content .aside_item_container.celebrate_item .item_btns .post_btn:first-child {
+  transform: rotate(180deg);
+}
+.aside__content .aside_item_container.tags_item .tag_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.instagram_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.instagram_container .instagram_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+@media (max-width: 992px) {
+  .instagram_container .instagram_content {
+    flex-wrap: wrap;
+  }
+}
+.instagram_container .instagram_content .insta_item {
+  flex-grow: 0;
+}
+.instagram_container .instagram_content .insta_item img {
+  width: 100%;
+}
+.instagram_container .instagram_btns {
+  position: absolute;
+}
+
 body {
   font-family: "Roboto-Regular";
   font-size: 14px;

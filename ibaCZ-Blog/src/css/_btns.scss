@@ -5,11 +5,26 @@
 	background: $c-main-white;
 
 	@include fontStyle($color: $c-blue-grayest);
+	@include Flexyble();
 
 	&:hover {
 		border-color: $c-main-red;
 		background: $main-gradient;
 		color: $c-main-white;
+	}
+}
+
+.form_btn {
+	padding: 0.35em 0.75em;
+	border: 1px solid transparent;
+	border-radius: 20px;
+	background: $main-gradient;
+
+	@include fontStyle($color: $c-main-white);
+
+	&:hover {
+		border-color: $c-main-red;
+		background: $c-main-red;
 	}
 }
 
@@ -64,12 +79,18 @@
 .pagBtnBig {
 	width: 44px;
 	height: 44px;
+	border: 1px solid $c-blue-grayest;
 	border-radius: 50%;
-	background: $c-red-lightest;
+	background: $c-main-white;
+
+	@include fontStyle($color: $c-blue-grayest);
+	@include Flexyble();
 
 	&:hover,
 	&:active {
 		background: $main-gradient;
+		color: $c-main-white;
+		border-color: $c-main-red;
 	}
 }
 

@@ -34,23 +34,24 @@ $postItemAside = [
 ?>
 
 <div class="main__container">
-	<div class="main__content">
-		<?php
-		for ($i = 1; $i <= $colPost; $i++) {
-			$tagIndx = round(rand(0, 4));
-			$colectionIndx = round(rand(0, 2));
+	<div class="main__content_container">
+		<div class="main__content">
+			<?php
+			for ($i = 1; $i <= $colPost; $i++) {
+				$tagIndx = round(rand(0, 4));
+				$colectionIndx = round(rand(0, 2));
 
-			if ($i % 3 == 1) {
-				$colectionBtn = '
+				if ($i % 3 == 1) {
+					$colectionBtn = '
 						<button class="rounded_btn" name="post-collection-">
 							' . $colection[$colectionIndx] . '
 						</button>
 				';
-			} else {
-				$colectionBtn = '';
-			}
+				} else {
+					$colectionBtn = '';
+				}
 
-			echo '
+				echo '
 				<div class="main__item_container">
 					<div class="main__item_content">
 						<div class="item_foto">
@@ -97,9 +98,16 @@ $postItemAside = [
 					</div>
 				</div>
 			';
-		}
-		?>
+			}
+			?>
 
+		</div>
+
+		<div class="main_pagBtn_container">
+			<button class="pagBtnBig">1</button>
+			<button class="pagBtnBig">2</button>
+			<button class="pagBtnBig">3</button>
+		</div>
 	</div>
 
 	<div class="aside__content">
@@ -121,7 +129,7 @@ $postItemAside = [
 
 		<div class="aside_item_container post_item">
 			<div class="item_title">
-				<h3>header item</h3>
+				<h3>popular posts</h3>
 			</div>
 
 			<?php
@@ -144,7 +152,7 @@ $postItemAside = [
 
 		<div class="aside_item_container topics_item">
 			<div class="item_title">
-				<h3>header item</h3>
+				<h3>Explore topics</h3>
 			</div>
 
 			<?php
@@ -168,7 +176,19 @@ $postItemAside = [
 
 		<div class="aside_item_container news_item">
 			<div class="item_title">
-				<h3>header item</h3>
+				<h3>Newsletter</h3>
+			</div>
+
+			<div class="form_container">
+				<div class="form_title">
+					<span>Join 70,000 subscribers!</span>
+				</div>
+				<div class="form_content">
+					<form action="" method="post" name="newsSubscribe">
+						<input type="email" placeholder="Email adress ...">
+						<button type="submit" class="form_btn">Sign up</button>
+					</form>
+				</div>
 			</div>
 		</div>
 
@@ -176,13 +196,91 @@ $postItemAside = [
 			<div class="item_title">
 				<h3>header item</h3>
 			</div>
+			<?php
+			echo '
+				<div class="item_container">
+					<div class="_content">
+						<div class="item_foto">
+							<img src="' . $postItem['img'] . '" alt="blog-foto - ' . $postItem['img'] . '">
+							<div class="item_tag"> 
+								<button class="tag_btn" name="post-tag-' . $tag[$tagIndx] . '">
+								' . $tag[4] . '
+								</button>
+							</div>	
+						</div>		
+					</div>					
+
+					<div class="item_content">
+						<div class="item_title">
+							<h4>' . $postItem['title'] . '</h4>
+						</div>
+						<div class="item_autor">
+							<div class="autor_name">
+								<span>' . $postItem['autor'] . '</span>
+							</div>
+							
+							<div class="autor_date">
+								<span>' . $postItem['date'] . '</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			';
+
+			?>
+
+			<div class="item_btns">
+				<button class="post_btn">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+						<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+					</svg>
+				</button>
+				<button class="post_btn">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+						<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+					</svg>
+				</button>
+			</div>
+
 		</div>
 
 		<div class="aside_item_container tags_item">
 			<div class="item_title">
-				<h3>header item</h3>
+				<h3>tag clouds</h3>
+			</div>
+
+			<div class="tag_container">
+				<?php
+				foreach ($tag as $item) {
+					echo '
+					<button class="main_btn">#' . $item . '</button>
+					';
+				}
+				?>
+
 			</div>
 		</div>
 
 	</div>
+</div>
+
+<div class="instagram_container">
+	<div class="instagram_content">
+		<?php
+		for ($i = 1; $i <= 6; $i++) {
+			echo '
+			
+				<div class="insta_item">
+					<img src="' . $postItem['img'] . '" alt="' . $postItem['img'] . '">
+				</div>
+			
+			';
+		}
+		?>
+	</div>
+
+	<div class="instagram_btns">
+		<button class="tag_btn">@Cube on Instagram</button>
+	</div>
+
 </div>

@@ -9,6 +9,21 @@
 	}
 }
 
+.main_pagBtn_container {
+	width: 100%;
+	margin: 20px auto;
+	@include Flexyble();
+	gap: 5px;
+
+	.pagBtnBig {
+		&:first-child {
+			background: $main-gradient;
+			color: $c-main-white;
+			border-color: $c-main-red;
+		}
+	}
+}
+
 .main__content {
 	display: grid;
 	grid-auto-flow: row;
@@ -125,7 +140,6 @@
 
 // ASIDE Section
 // ===================
-
 .aside__content {
 	width: 100%;
 	@include Flexyble();
@@ -288,10 +302,154 @@
 		}
 
 		&.news_item {
+			.form_container {
+				width: 100%;
+				text-align: center;
+			}
+
+			.form_title {
+				@include fontStyle($fs: 1.3em, $fw: 900);
+			}
+
+			.form_content {
+				width: 100%;
+				margin-top: 20px;
+
+				form {
+					width: 100%;
+					@include Flexyble();
+					flex-direction: column;
+					gap: 10px;
+
+					input,
+					button {
+						width: 100%;
+						padding: 10px 20px;
+					}
+
+					input {
+						border: 1px solid $c-blue-grayest;
+						border-radius: 20px;
+						color: $c-blue-grayest;
+						text-align: center;
+					}
+				}
+			}
 		}
+
 		&.celebrate_item {
+			.item_foto {
+				width: 100%;
+				position: relative;
+				border-radius: 10px;
+				overflow: hidden;
+
+				img {
+					width: 100%;
+				}
+
+				.item_tag {
+					position: absolute;
+					top: 20px;
+					left: 20px;
+				}
+			}
+
+			.item_content {
+				padding: 20px;
+				@include Flexyble();
+				flex-direction: column;
+				gap: 20px;
+				justify-content: flex-start;
+
+				.item_title {
+					h4 {
+						@include fontStyle($fs: 1.7em, $fw: 900);
+						text-transform: capitalize;
+					}
+				}
+
+				.item_autor {
+					width: 100%;
+					@include Flexyble();
+					justify-content: flex-start;
+					gap: 15px;
+
+					@include fontStyle($color: $c-blue-grayest);
+
+					.autor_name {
+						@include Flexyble();
+						&::after {
+							content: "";
+							display: inline-block;
+							margin-left: 15px;
+							width: 5px;
+							height: 5px;
+							border-radius: 50%;
+							background-color: $c-main-red;
+						}
+					}
+				}
+			}
+
+			.item_btns {
+				width: 100%;
+				@include Flexyble();
+				gap: 5px;
+
+				.post_btn {
+					padding: 10px;
+					@include Flexyble();
+
+					border: 1px solid $c-blue-grayest;
+					border-radius: 50%;
+
+					&:hover {
+						border-color: $c-red-lightest;
+					}
+
+					&:first-child {
+						transform: rotate(180deg);
+					}
+				}
+			}
 		}
+
 		&.tags_item {
+			.tag_container {
+				@include Flexyble();
+				flex-wrap: wrap;
+				gap: 5px;
+			}
 		}
+	}
+}
+
+// INSTAGRAMM Section
+// ===================
+.instagram_container {
+	width: 100%;
+	@include Flexyble();
+	position: relative;
+
+	.instagram_content {
+		@include Flexyble();
+		gap: 5px;
+
+		@media (max-width: 992px) {
+			flex-wrap: wrap;
+		}
+
+		.insta_item {
+			flex-grow: 0;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	.instagram_btns {
+		position: absolute;
 	}
 }
