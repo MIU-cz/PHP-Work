@@ -897,6 +897,7 @@
 
 .instagram_container {
   width: 100%;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -921,6 +922,45 @@
 }
 .instagram_container .instagram_btns {
   position: absolute;
+}
+
+.footer_container {
+  width: 100%;
+  margin-top: 40px;
+  padding: 40px 0;
+  border-top: 1px solid hsl(217, 16%, 68%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer_description {
+  font-family: "Roboto-Regular";
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: normal;
+  line-height: normal;
+  color: hsl(217, 16%, 68%);
+}
+
+.footer_smmBtns .links_content {
+  width: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer_smmBtns .links_content .links_item {
+  width: 20px;
+  height: 20px;
+}
+.footer_smmBtns .links_content .links_item svg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 body {

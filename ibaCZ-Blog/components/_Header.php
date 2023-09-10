@@ -13,7 +13,7 @@ require '_smm-bar.php';
 			</ul>
 		</div>
 
-		<div class="brand_container">
+		<div class="brand_container" id="topBrand">
 			<div class="brand_pic">
 				<img src="./src/img/autor-foto.png" alt="autor-foto">
 			</div>
