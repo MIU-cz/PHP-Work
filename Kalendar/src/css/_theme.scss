@@ -1,0 +1,32 @@
+// ## COLORS THEME
+$c-main-blue: hsl(216, 46%, 23%);
+$c-main-white: hsl(0, 0%, 100%);
+$c-main-grayest: hsl(217, 16%, 68%);
+
+// jaro:
+$c-jaro-green: hsl(120, 100%, 50%);
+$c-jaro-yelow: hsl(60, 100%, 50%);
+$c-jaro-red: hsl(330, 100%, 50%);
+
+// leto:
+$c-leto-orange: hsl(30, 100%, 50%);
+$c-leto-blue: hsl(210, 100%, 50%);
+$c-leto-violet: hsl(270, 100%, 50%);
+
+// podzim:
+$c-podzim-red: hsl(0, 100%, 50%);
+$c-podzim-brown: hsl(30, 75%, 25%);
+$c-podzim-gold: hsl(50, 100%, 50%);
+
+// zima:
+$c-zima-blue: hsl(240, 100%, 50%);
+$c-zima-wite: hsl(0, 0%, 100%);
+$c-zima-silver: hsl(0, 0%, 75%);
+
+// ## Variables:
+
+@mixin Flexyble() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

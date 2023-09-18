@@ -1,0 +1,23 @@
+@font-face {
+	font-family: "Roboto-Regular";
+	src: local("Roboto-Regular"),
+		url(../fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+$ff-main: "Roboto-Regular";
+
+@mixin fontStyle(
+	$ff: $ff-main,
+	$fs: inherit,
+	$fw: inherit,
+	$ls: normal,
+	$lh: normal,
+	$color: $c-main-blue
+) {
+	font-family: $ff;
+	font-size: $fs;
+	font-weight: $fw;
+	letter-spacing: $ls;
+	line-height: $lh;
+	color: $color;
+}

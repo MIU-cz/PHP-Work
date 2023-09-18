@@ -9,10 +9,8 @@ $color-bg: #012e40;
 $color-text: #fff;
 
 // # main footer style
-:root {
-	font-family: "Permanent Marker", cursive;
-	font-size: 12px;
-}
+// :root {
+// }
 
 // body {
 // 	padding: 0;
@@ -24,6 +22,9 @@ $color-text: #fff;
 	box-sizing: border-box;
 	padding: 20px;
 	background-color: transparentize($color: $color-bg, $amount: 0.7);
+
+	font-family: "Permanent Marker", cursive;
+	font-size: 12px;
 
 	text-align: center;
 	letter-spacing: 0.1em;
@@ -67,9 +68,9 @@ $color-text: #fff;
 	}
 }
 
-// @media (min-width: 768px) {
-// 	.attribution {
-// 		position: fixed;
-// 		bottom: 0;
-// 	}
-// }
+@media (min-width: 768px) {
+	.autor {
+		position: fixed;
+		bottom: 0;
+	}
+}

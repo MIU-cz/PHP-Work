@@ -1,0 +1,20 @@
+@import "../components/autor-resourse/my-normaliz-style-min.css";
+@import "_theme", "_font";
+@import "../components/autor-resourse/autor-footer-style.css";
+
+.kal_wraper {
+	width: fit-content;
+	@include fontStyle();
+	margin: 40px auto auto;
+	padding: 40px;
+	border-radius: 20px;
+}
+
+.kal_content {
+	@include Flexyble();
+	gap: 20px;
+	@media (min-width: 1024px) {
+		flex-direction: row;
+		align-items: flex-start;
+	}
+}
