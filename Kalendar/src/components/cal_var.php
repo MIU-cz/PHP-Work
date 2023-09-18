@@ -1,5 +1,5 @@
 <?php
-
+// main variables for kalendar:
 if (isset($_GET['year'])) {
 	$new_year = $_GET['year'];
 } else {
@@ -34,9 +34,11 @@ if ($cur_firstday_month == 0) {
 	$cur_firstday_month = 7;
 }
 
+// for adding cover style classes
 $season_index = (($new_month == 12) ? 3 : ($new_month <= 2)) ? 3 : floor(($new_month - 2) / 3);
 $season = $seasons[$season_index];
 
+// url for redirect
 if (isset($_GET['day'])) {
 	$url = '&year=' . $new_year . '&month=' . $new_month . '&day=' . $select_day;
 } elseif (isset($_GET['month'])) {

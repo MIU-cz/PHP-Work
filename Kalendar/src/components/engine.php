@@ -4,6 +4,7 @@ require('cal_var.php');
 
 $db_link = new mysqli($db['host'], $db['name'], $db['pass'], $db['base']);
 
+// add new task & redirect to current month
 if (isset($_POST['ukol'])) {
 	$ukol = mysqli_real_escape_string($db_link, $_POST['ukol']);
 	$query_add_task = 'INSERT INTO tasks (txt, datum) VALUES ("' . $ukol . '", "' . $_POST['date'] . '")';
@@ -17,6 +18,7 @@ if (isset($_POST['ukol'])) {
 	exit;
 }
 
+// delete choosen task
 if (isset($_GET['cur-task']) && $_GET['cur-task'] == 'del') {
 	$query_del_task = 'DELETE FROM `tasks` WHERE `tasks`.`id` = ' . $_GET['task-id'] . '';
 	$db_link->query($query_del_task);
@@ -27,9 +29,3 @@ if (isset($_GET['cur-task']) && $_GET['cur-task'] == 'del') {
 }
 
 $db_link->close();
-
-// lost variables ???
-// echo $select_day . $new_month . '<br>';
-// echo $day . $month . '<br>';
-// print_r($_GET) . '<br>';
-// print_r($_POST) . '<br>';
