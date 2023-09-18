@@ -5,60 +5,115 @@
   src: local("Roboto-Regular"), url(../fonts/Roboto-Regular.ttf) format("truetype");
 }
 .jaro {
-  background: linear-gradient(90deg, hsl(49, 56%, 40%) 0%, rgba(159, 138, 45, 0) 5%, rgba(159, 138, 45, 0) 95%, hsl(49, 56%, 40%) 100%), url("../img/jaro.jpeg") center/cover no-repeat hsl(49, 56%, 40%);
+  background: linear-gradient(90deg, hsl(60, 56.9%, 85.3%) 0%, rgba(239, 239, 196, 0) 5%, rgba(239, 239, 196, 0) 95%, hsl(60, 56.9%, 85.3%) 100%), url("../img/jaro.jpeg") center/cover no-repeat hsl(60, 56.9%, 85.3%);
 }
 .jaro .kal_wraper {
-  background-color: rgba(159, 138, 45, 0.85);
+  background-color: rgba(239, 239, 196, 0.85);
 }
 .jaro .kal_container {
-  background-color: hsl(49, 56%, 40%);
+  background-color: hsl(60, 56.9%, 85.3%);
 }
 .jaro .kal_container .row_header,
 .jaro .kal_container .row_kal,
 .jaro .kal_container td,
 .jaro .kal_container th {
-  border: hsl(60, 100%, 50%);
+  border: hsl(51, 100%, 50%);
 }
-.jaro .kal_container a {
+.jaro .kal_container .kal_navi a {
+  color: hsl(120, 100%, 25%);
+}
+.jaro .kal_container .row_header th {
   color: hsl(60, 100%, 50%);
+}
+.jaro .kal_container .row_kal a {
+  color: hsl(30, 59.4%, 40.4%);
+}
+.jaro .kal_container .row_kal a:hover {
+  color: hsl(350, 100%, 87.6%);
 }
 
 .leto {
-  background: linear-gradient(90deg, hsl(30, 100%, 50%) 0%, rgba(255, 128, 0, 0) 5%, rgba(255, 128, 0, 0) 95%, hsl(30, 100%, 50%) 100%), url("../img/leto.jpeg") center/cover no-repeat hsl(30, 100%, 50%);
+  background: linear-gradient(90deg, hsl(39, 100%, 50%) 0%, rgba(255, 166, 0, 0) 5%, rgba(255, 166, 0, 0) 95%, hsl(39, 100%, 50%) 100%), url("../img/leto.jpeg") center/cover no-repeat hsl(39, 100%, 50%);
 }
 .leto .kal_wraper {
-  background-color: rgba(255, 128, 0, 0.85);
+  background-color: rgba(255, 166, 0, 0.85);
 }
 .leto .kal_container {
-  background-color: hsl(30, 100%, 50%);
+  background-color: hsl(39, 100%, 50%);
 }
 .leto .kal_container .row_header,
 .leto .kal_container .row_kal,
 .leto .kal_container td,
 .leto .kal_container th {
-  border: hsl(270, 100%, 50%);
+  border: hsl(28, 66.7%, 46.7%);
 }
-.leto .kal_container a {
-  color: hsl(270, 100%, 50%);
+.leto .kal_container .kal_navi a {
+  color: hsl(0, 100%, 50%);
+}
+.leto .kal_container .row_header th {
+  color: hsl(174, 72.1%, 56.9%);
+}
+.leto .kal_container .row_kal a {
+  color: hsl(0, 0%, 0%);
+}
+.leto .kal_container .row_kal a:hover {
+  color: hsl(54, 80.8%, 75%);
 }
 
 .podzim {
-  background: linear-gradient(90deg, hsl(30, 75%, 25%) 0%, rgba(112, 64, 16, 0) 5%, rgba(112, 64, 16, 0) 95%, hsl(30, 75%, 25%) 100%), url("../img/podzim.jpeg") center/cover no-repeat hsl(30, 75%, 25%);
+  background: linear-gradient(90deg, hsl(0, 100%, 25%) 0%, rgba(128, 0, 0, 0) 5%, rgba(128, 0, 0, 0) 95%, hsl(0, 100%, 25%) 100%), url("../img/podzim.jpeg") center/cover no-repeat hsl(0, 100%, 25%);
 }
 .podzim .kal_wraper {
-  background-color: rgba(112, 64, 16, 0.85);
+  background-color: rgba(128, 0, 0, 0.85);
 }
 .podzim .kal_container {
-  background-color: hsl(30, 75%, 25%);
+  background-color: hsl(0, 100%, 25%);
 }
 .podzim .kal_container .row_header,
 .podzim .kal_container .row_kal,
 .podzim .kal_container td,
 .podzim .kal_container th {
-  border: hsl(50, 100%, 50%);
+  border: hsl(30, 49.2%, 44.9%);
 }
-.podzim .kal_container a {
-  color: hsl(50, 100%, 50%);
+.podzim .kal_container .kal_navi a {
+  color: hsl(39, 100%, 50%);
+}
+.podzim .kal_container .row_header th {
+  color: hsl(120, 100%, 25%);
+}
+.podzim .kal_container .row_kal a {
+  color: hsl(0, 0%, 100%);
+}
+.podzim .kal_container .row_kal a:hover {
+  color: hsl(0, 100%, 50%);
+}
+
+.zima {
+  background: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 5%, rgba(255, 255, 255, 0) 95%, hsl(0, 0%, 100%) 100%), url("../img/zima.jpeg") center/cover no-repeat hsl(0, 0%, 100%);
+}
+.zima .kal_wraper {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.zima .kal_container {
+  background-color: hsl(0, 0%, 100%);
+}
+.zima .kal_container .row_header,
+.zima .kal_container .row_kal,
+.zima .kal_container td,
+.zima .kal_container th {
+  border: hsl(0, 0%, 75%);
+}
+.zima .kal_container .kal_navi a {
+  color: hsl(240, 100%, 50%);
+}
+.zima .kal_container .row_header th {
+  color: hsl(180, 100%, 50%);
+}
+.zima .kal_container .row_kal a {
+  color: hsl(0, 0%, 50%);
+}
+.zima .kal_container .row_kal a:hover {
+  color: hsl(300, 100%, 50%);
 }
 
 body {

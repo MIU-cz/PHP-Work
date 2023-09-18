@@ -7,10 +7,9 @@
 		echo '<a class="btn_cal" href="?month=' . $new_month + 1 . '&year=' . $new_year . '">' . $kal_btn['next'] . '</a>';
 		echo '</div>';
 		echo '<div class="kal_navi">
-			<a class="btn_cal" href="?month=' . $cur_month . '">' . $cur_month_str . '</a></div>';
+			<a class="btn_cal" href="?month=' . $new_month . '">' . $cur_month_str . '</a></div>';
 		echo '<div class="kal_navi">
 			<a class="btn_cal" href="?year=' . $new_year . '">' . $new_year . '</a></div>';
-
 		?>
 	</div>
 

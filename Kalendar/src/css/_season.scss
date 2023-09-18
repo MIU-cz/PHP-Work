@@ -43,29 +43,21 @@
 }
 
 .jaro {
-	@include Zima();
-	@include Season("../img/jaro.jpeg", $bg, $title, $dscrpt, $txt, $link, $brdr);
+	@include Jaro();
+	// @include Season($img, $bg, $title, $dscrpt, $txt, $link, $brdr);
 }
 
 .leto {
-	@include Zima();
-	@include Season("../img/leto.jpeg", $bg, $title, $dscrpt, $txt, $link, $brdr);
+	@include Leto();
+	// @include Season($img, $bg, $title, $dscrpt, $txt, $link, $brdr);
 }
 
 .podzim {
-	@include Zima();
-	@include Season(
-		"../img/podzim.jpeg",
-		$bg,
-		$title,
-		$dscrpt,
-		$txt,
-		$link,
-		$brdr
-	);
+	@include Podzim();
+	// @include Season($img, $bg, $title, $dscrpt, $txt, $link, $brdr);
 }
 
 .zima {
 	@include Zima();
-	@include Season("../img/zima.jpeg", $bg, $title, $dscrpt, $txt, $link, $brdr);
+	// @include Season($img, $bg, $title, $dscrpt, $txt, $link, $brdr);
 }

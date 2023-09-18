@@ -35,7 +35,7 @@ if ($cur_firstday_month == 0) {
 }
 
 // for adding cover style classes
-$season_index = (($new_month == 12) ? 3 : ($new_month <= 2)) ? 3 : floor(($new_month - 2) / 3);
+$season_index = (($new_month == 12) ? 3 : ($new_month <= 2)) ? 3 : floor(($new_month - 3) / 3);
 $season = $seasons[$season_index];
 
 // url for redirect
