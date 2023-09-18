@@ -1,5 +1,5 @@
 <div class="kal_container">
-	<table id="kalendar" data="<?php echo $season ?>">
+	<table id="kalendar" data-season="<?php echo $season ?>">
 		<caption class="kal_title">
 			<?php
 			echo '<div class="kal_navi">';

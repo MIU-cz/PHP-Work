@@ -1,20 +1,31 @@
 @import "../components/autor-resourse/my-normaliz-style-min.css";
-@import "_theme", "_font";
+@import "_theme", "_font", "_season";
 @import "../components/autor-resourse/autor-footer-style.css";
 
+body {
+	padding-top: 40px;
+}
 .kal_wraper {
 	width: fit-content;
 	@include fontStyle();
-	margin: 40px auto auto;
+	margin: 0 auto;
 	padding: 40px;
 	border-radius: 20px;
 }
 
 .kal_content {
 	@include Flexyble();
+	flex-wrap: wrap;
 	gap: 20px;
+
 	@media (min-width: 1024px) {
 		flex-direction: row;
 		align-items: flex-start;
 	}
+}
+
+.kal_container,
+.task_container {
+	padding: 20px;
+	border-radius: 10px;
 }

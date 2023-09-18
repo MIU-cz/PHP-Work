@@ -4,6 +4,50 @@
   font-family: "Roboto-Regular";
   src: local("Roboto-Regular"), url(../fonts/Roboto-Regular.ttf) format("truetype");
 }
+.jaro {
+  background: linear-gradient(90deg, hsl(49, 56%, 40%) 0%, rgba(159, 138, 45, 0) 5%, rgba(159, 138, 45, 0) 95%, hsl(49, 56%, 40%) 100%), url("../img/jaro.jpeg") center/cover no-repeat hsl(49, 56%, 40%);
+}
+.jaro .kal_wraper {
+  background-color: rgba(159, 138, 45, 0.85);
+}
+.jaro .kal_container {
+  background-color: hsl(49, 56%, 40%);
+}
+
+.leto {
+  background: linear-gradient(90deg, hsl(30, 100%, 50%) 0%, rgba(255, 128, 0, 0) 5%, rgba(255, 128, 0, 0) 95%, hsl(30, 100%, 50%) 100%), url("../img/leto.jpeg") center/cover no-repeat hsl(30, 100%, 50%);
+}
+.leto .kal_wraper {
+  background-color: rgba(255, 128, 0, 0.85);
+}
+.leto .kal_container {
+  background-color: hsl(30, 100%, 50%);
+}
+
+.podzim {
+  background: linear-gradient(90deg, hsl(30, 75%, 25%) 0%, rgba(112, 64, 16, 0) 5%, rgba(112, 64, 16, 0) 95%, hsl(30, 75%, 25%) 100%), url("../img/podzim.jpeg") center/cover no-repeat hsl(30, 75%, 25%);
+}
+.podzim .kal_wraper {
+  background-color: rgba(112, 64, 16, 0.85);
+}
+.podzim .kal_container {
+  background-color: hsl(30, 75%, 25%);
+}
+
+.zima {
+  background: linear-gradient(90deg, hsl(0, 0%, 75%) 0%, rgba(191, 191, 191, 0) 5%, rgba(191, 191, 191, 0) 95%, hsl(0, 0%, 75%) 100%), url("../img/zima.jpeg") center/cover no-repeat hsl(0, 0%, 75%);
+}
+.zima .kal_wraper {
+  background-color: rgba(191, 191, 191, 0.85);
+}
+.zima .kal_container {
+  background-color: hsl(0, 0%, 75%);
+}
+
+body {
+  padding-top: 40px;
+}
+
 .kal_wraper {
   width: -moz-fit-content;
   width: fit-content;
@@ -13,7 +57,7 @@
   letter-spacing: normal;
   line-height: normal;
   color: hsl(216, 46%, 23%);
-  margin: 40px auto auto;
+  margin: 0 auto;
   padding: 40px;
   border-radius: 20px;
 }
@@ -22,6 +66,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 @media (min-width: 1024px) {
@@ -29,4 +74,10 @@
     flex-direction: row;
     align-items: flex-start;
   }
+}
+
+.kal_container,
+.task_container {
+  padding: 20px;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */

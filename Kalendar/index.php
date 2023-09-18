@@ -15,7 +15,7 @@ require('src/components/cal_var.php');
 	<link rel="stylesheet" href="src/css/style.css">
 </head>
 
-<body>
+<body id="body">
 	<main class="kal_wraper" id="mainContainer">
 		<div class="kal_content">
 			<?php
@@ -31,6 +31,7 @@ require('src/components/cal_var.php');
 	</footer>
 
 	<script src="src/components/autor-resourse/autor-footer-script.js"></script>
+	<script src="src/js/script.js"></script>
 </body>
 
 </html>
