@@ -22,14 +22,7 @@ if (isset($_GET['cur-task']) && $_GET['cur-task'] == 'del') {
 	$db_link->query($query_del_task);
 	unset($_GET['cur-task']);
 
-	if (isset($_GET['day'])) {
-		$url = 'year=' . $new_year . '&month=' . $new_month . '&day=' . $select_day;
-	} else {
-		$url = 'year=' . $new_year . '&month=' . $new_month;
-		unset($_GET['day']);
-	}
-
-	header('Location: /Kalendar?' . $url . '');
+	header('Location: /Kalendar?' . $url);
 	exit;
 }
 

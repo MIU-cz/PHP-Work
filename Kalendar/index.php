@@ -19,6 +19,7 @@ require('src/components/cal_var.php');
 		<div class="kal_content">
 			<?php
 			include('src/components/Kalendar.php');
+			include('src/components/Tasks.php');
 			?>
 		</div>
 	</main>

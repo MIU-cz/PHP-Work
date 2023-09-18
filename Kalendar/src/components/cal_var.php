@@ -36,3 +36,11 @@ if ($cur_firstday_month == 0) {
 
 $season_index = (($new_month == 12) ? 3 : ($new_month <= 2)) ? 3 : floor(($new_month - 2) / 3);
 $season = $seasons[$season_index];
+
+if (isset($_GET['day'])) {
+	$url = '&year=' . $new_year . '&month=' . $new_month . '&day=' . $select_day;
+} elseif (isset($_GET['month'])) {
+	$url = '&year=' . $new_year . '&month=' . $new_month;
+} else {
+	$url = '&year=' . $new_year;
+}
