@@ -5,6 +5,7 @@
 body {
 	padding-top: 40px;
 }
+
 .kal_wraper {
 	width: fit-content;
 	@include fontStyle();
@@ -28,4 +29,48 @@ body {
 .task_container {
 	padding: 20px;
 	border-radius: 10px;
+}
+
+.kal_container {
+	.kal_title {
+		width: 100%;
+		@include Flexyble();
+		justify-content: space-between;
+		padding: 10px 10px 20px;
+
+		.btn_cal {
+			text-transform: capitalize;
+			font-weight: 700;
+			font-size: 1.2em;
+		}
+	}
+
+	.row_header,
+	.row_kal {
+		td,
+		th {
+			padding: 5px;
+			border: 1px solid;
+			text-align: center;
+
+			&:first-child {
+				border-left: transparent;
+			}
+
+			&:last-child {
+				border-right: transparent;
+			}
+		}
+
+		&:first-child,
+		th {
+			border-top: transparent;
+		}
+
+		&:last-child {
+			td {
+				border-bottom: transparent;
+			}
+		}
+	}
 }

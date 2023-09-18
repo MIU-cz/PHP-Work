@@ -1,31 +1,71 @@
-@mixin SeasonBG($color, $img) {
+@mixin Season($img, $bg, $title, $dscrpt, $txt, $link, $brdr) {
 	background: linear-gradient(
 			90deg,
-			$color 0%,
-			transparentize($color: $color, $amount: 1) 5%,
-			transparentize($color: $color, $amount: 1) 95%,
-			$color 100%
+			$bg 0%,
+			transparentize($color: $bg, $amount: 1) 5%,
+			transparentize($color: $bg, $amount: 1) 95%,
+			$bg 100%
 		),
-		url($img) center / cover no-repeat $color;
+		url($img) center / cover no-repeat $bg;
 
 	.kal_wraper {
-		background-color: transparentize($color: $color, $amount: 0.15);
+		background-color: transparentize($color: $bg, $amount: 0.15);
 	}
 
 	.kal_container {
-		background-color: $color;
+		background-color: $bg;
+
+		.row_header,
+		.row_kal,
+		td,
+		th {
+			border: $brdr;
+		}
+
+		.kal_navi {
+			a {
+				color: $title;
+			}
+		}
+
+		.row_header th {
+			color: $dscrpt;
+		}
+
+		.row_kal a {
+			color: $txt;
+
+			&:hover {
+				color: $link;
+			}
+		}
 	}
 }
 
 .jaro {
-	@include SeasonBG($c-jaro-broun, "../img/jaro.jpeg");
+	@include Zima();
+	@include Season("../img/jaro.jpeg", $bg, $title, $dscrpt, $txt, $link, $brdr);
 }
+
 .leto {
-	@include SeasonBG($c-leto-orange, "../img/leto.jpeg");
+	@include Zima();
+	@include Season("../img/leto.jpeg", $bg, $title, $dscrpt, $txt, $link, $brdr);
 }
+
 .podzim {
-	@include SeasonBG($c-podzim-brown, "../img/podzim.jpeg");
+	@include Zima();
+	@include Season(
+		"../img/podzim.jpeg",
+		$bg,
+		$title,
+		$dscrpt,
+		$txt,
+		$link,
+		$brdr
+	);
 }
+
 .zima {
-	@include SeasonBG($c-zima-silver, "../img/zima.jpeg");
+	@include Zima();
+	@include Season("../img/zima.jpeg", $bg, $title, $dscrpt, $txt, $link, $brdr);
 }

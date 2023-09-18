@@ -1,15 +1,21 @@
 <div class="kal_container">
+	<div class="kal_title">
+		<?php
+		echo '<div class="kal_navi">';
+		echo '<a class="btn_cal" href="?month=' . $new_month - 1 . '&year=' . $new_year . '">' . $kal_btn['prev'] . '</a>';
+		echo '<a class="btn_cal" href="?month=' . $cur_month . '">' . $kal_btn['cur_month'] . '</a>';
+		echo '<a class="btn_cal" href="?month=' . $new_month + 1 . '&year=' . $new_year . '">' . $kal_btn['next'] . '</a>';
+		echo '</div>';
+		echo '<div class="kal_navi">
+			<a class="btn_cal" href="?month=' . $cur_month . '">' . $cur_month_str . '</a></div>';
+		echo '<div class="kal_navi">
+			<a class="btn_cal" href="?year=' . $new_year . '">' . $new_year . '</a></div>';
+
+		?>
+	</div>
+
 	<table id="kalendar" data-season="<?php echo $season ?>">
-		<caption class="kal_title">
-			<?php
-			echo '<div class="kal_navi">';
-			echo '<a class="btn_cal" href="?month=' . $new_month - 1 . '&year=' . $new_year . '">' . $kal_btn['prev'] . '</a>';
-			echo '<a class="btn_cal" href="?month=' . $cur_month . '">' . $kal_btn['cur_month'] . '</a>';
-			echo '<a class="btn_cal" href="?month=' . $new_month + 1 . '&year=' . $new_year . '">' . $kal_btn['next'] . '</a>';
-			echo '</div>';
-			echo '<span>' . $cur_month_str . '</span><span>' . $new_year . '</span>';
-			?>
-		</caption>
+
 		<thead>
 			<tr class="row_header">
 				<?php
