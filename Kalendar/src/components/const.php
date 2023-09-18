@@ -1,4 +1,11 @@
 <?php
+$db = [
+	'host' => 'localhost',
+	'name' => 'admin',
+	'pass' => 'admin',
+	'base' => 'agenda'
+];
+
 $season = [
 	'jaro',
 	'leto',

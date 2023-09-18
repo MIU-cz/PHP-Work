@@ -18,12 +18,36 @@ if (isset($_GET['month'])) {
 	$new_month = $cur_month;
 }
 
+if (isset($_GET['day'])) {
+	$select_day = $_GET['day'];
+} else {
+	$select_day = $cur_day;
+}
+
 $cur_month_str = $months[$new_month - 1];
 $col_days = cal_days_in_month(CAL_GREGORIAN, $new_month, $cur_year);
 $cur_fday_month = date('w', mktime(0, 0, 0, $new_month, 1, $cur_year));
 
 if ($cur_fday_month == 0) {
 	$cur_fday_month = 7;
+}
+
+// $select_date = date('d.m.Y', mktime(0, 0, 0, $select_day, $new_month, $cur_year));
+// echo $select_date . '<br>';
+// echo $select_day;
+// echo $new_month;
+
+$db_link = new mysqli($db['host'], $db['name'], $db['pass'], $db['base']);
+$tasks = $db_link->query("SHOW TABLES LIKE 'tasks'");
+if ($tasks->num_rows > 0) {
+	$query = "SELECT * FROM `tasks` WHERE `date`='$select_day.$new_month.$cur_year'";
+} else {
+	$query = "CREATE TABLE `tasks` (
+		id INT(10) NOT NULL AUTO_INCREMENT,		
+		txt VARCHAR(64) NOT NULL,
+		datum DATE,
+		PRIMARY KEY (id)		
+	 )";
 }
 
 ?>
@@ -35,6 +59,7 @@ if ($cur_fday_month == 0) {
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Kalendar - <?php echo $cur_month_str; ?></title>
+	<link rel="shortcut icon" href="src/img/ico/calendar-check.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -69,15 +94,15 @@ if ($cur_fday_month == 0) {
 						for ($w = 1; $w <= 7; $w++) {
 							if ($d == 1 && $w < $cur_fday_month || $d > $col_days) {
 								echo '<td></td>';
-							} elseif ($d == $cur_day) {
-								echo '
-							<td class="cur_day">' . $d . '</td>
-							';
-								$d++;
 							} else {
-								echo '
-							<td>' . $d . '</td>
-							';
+								if ($d == $cur_day && $new_month == $cur_month) {
+									echo '<td class="cur_day">';
+								} else {
+									echo '<td>';
+								}
+								echo '<a href="?month=' . $new_month . '&day=' . $d . '">' . $d . '</a>
+									</td>
+									';
 								$d++;
 							}
 						}
@@ -89,7 +114,9 @@ if ($cur_fday_month == 0) {
 		</div>
 
 		<div class="task_container">
-
+			<?php
+			$tasks = $db_link->query($query);
+			?>
 		</div>
 	</main>
 
