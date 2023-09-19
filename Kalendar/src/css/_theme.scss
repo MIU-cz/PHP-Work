@@ -2,30 +2,24 @@
 $c-main-blue: hsl(216, 46%, 23%);
 $c-main-white: hsl(0, 0%, 100%);
 $c-main-grayest: hsl(217, 16%, 68%);
+$c-main-red: hsl(0, 100%, 50%);
+$c-main-green: hsl(120, 100%, 50%);
+$c-main-orange: hsl(30, 100%, 50%);
 
-// jaro:
-$c-jaro-green: hsl(120, 100%, 50%);
-$c-jaro-broun: hsl(49, 56%, 40%);
-$c-jaro-yelow: hsl(60, 100%, 50%);
-$c-jaro-red: hsl(330, 100%, 50%);
 @mixin Jaro() {
 	$img: "../img/jaro.jpeg";
 	$bg: hsl(60, 56.9%, 85.3%);
 	$title: hsl(120, 100%, 25%);
-	$dscrpt: hsl(60, 100%, 50%);
+	$dscrpt: hsl(30, 100%, 50%);
 	$txt: hsl(30, 59.4%, 40.4%);
 	$link: hsl(350, 100%, 87.6%);
 	$brdr: hsl(51, 100%, 50%);
 	@include Season($img, $bg, $title, $dscrpt, $txt, $link, $brdr);
 }
 
-// leto:
-$c-leto-orange: hsl(30, 100%, 50%);
-$c-leto-blue: hsl(210, 100%, 50%);
-$c-leto-violet: hsl(270, 100%, 50%);
 @mixin Leto() {
 	$img: "../img/leto.jpeg";
-	$bg: hsl(39, 100%, 50%);
+	$bg: hsl(30, 100%, 50%);
 	$title: hsl(0, 100%, 50%);
 	$dscrpt: hsl(174, 72.1%, 56.9%);
 	$txt: hsl(0, 0%, 0%);
@@ -34,10 +28,6 @@ $c-leto-violet: hsl(270, 100%, 50%);
 	@include Season($img, $bg, $title, $dscrpt, $txt, $link, $brdr);
 }
 
-// podzim:
-$c-podzim-red: hsl(0, 100%, 50%);
-$c-podzim-brown: hsl(30, 75%, 25%);
-$c-podzim-gold: hsl(50, 100%, 50%);
 @mixin Podzim() {
 	$img: "../img/podzim.jpeg";
 	$bg: hsl(0, 100%, 25%);
@@ -49,10 +39,6 @@ $c-podzim-gold: hsl(50, 100%, 50%);
 	@include Season($img, $bg, $title, $dscrpt, $txt, $link, $brdr);
 }
 
-// zima:
-$c-zima-blue: hsl(240, 100%, 50%);
-$c-zima-wite: hsl(0, 0%, 100%);
-$c-zima-silver: hsl(0, 0%, 75%);
 @mixin Zima() {
 	$img: "../img/zima.jpeg";
 	$bg: hsl(0, 0%, 100%);
@@ -60,14 +46,6 @@ $c-zima-silver: hsl(0, 0%, 75%);
 	$dscrpt: hsl(180, 100%, 50%);
 	$txt: hsl(0, 0%, 50%);
 	$link: hsl(300, 100%, 50%);
-	$brdr: hsl(0, 0%, 75%);
+	$brdr: hsl(240, 100%, 50%);
 	@include Season($img, $bg, $title, $dscrpt, $txt, $link, $brdr);
-}
-
-// ## Variables:
-
-@mixin Flexyble() {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }

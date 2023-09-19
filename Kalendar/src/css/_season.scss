@@ -19,10 +19,12 @@
 		.row_kal,
 		td,
 		th {
-			border: $brdr;
+			border-color: $brdr;
 		}
 
-		.kal_navi {
+		.kal_navi,
+		.kal_month,
+		.kal_year {
 			a {
 				color: $title;
 			}
@@ -39,25 +41,48 @@
 				color: $link;
 			}
 		}
+
+		.cur_day {
+			background-color: transparentize($color: $dscrpt, $amount: 0.5);
+		}
+		.task_day {
+			background-color: transparentize($color: $dscrpt, $amount: 0.8);
+		}
+	}
+
+	.task_container {
+		.item_container {
+			p {
+				color: $title;
+			}
+			span {
+				color: $dscrpt;
+			}
+		}
+		.form_item {
+			color: $title;
+			font-weight: 600;
+			background-color: transparentize($color: $txt, $amount: 0.7);
+
+			&.btn_sub:hover {
+				background-color: $link;
+			}
+		}
 	}
 }
 
 .jaro {
 	@include Jaro();
-	// @include Season($img, $bg, $title, $dscrpt, $txt, $link, $brdr);
 }
 
 .leto {
 	@include Leto();
-	// @include Season($img, $bg, $title, $dscrpt, $txt, $link, $brdr);
 }
 
 .podzim {
 	@include Podzim();
-	// @include Season($img, $bg, $title, $dscrpt, $txt, $link, $brdr);
 }
 
 .zima {
 	@include Zima();
-	// @include Season($img, $bg, $title, $dscrpt, $txt, $link, $brdr);
 }

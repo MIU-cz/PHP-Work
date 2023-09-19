@@ -26,7 +26,7 @@ require('src/components/cal_var.php');
 	</main>
 
 
-	<footer>
+	<footer class="footer_wraper">
 		<div id="autor"></div>
 	</footer>
 

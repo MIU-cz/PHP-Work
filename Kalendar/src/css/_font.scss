@@ -5,10 +5,18 @@
 }
 
 $ff-main: "Roboto-Regular";
+$fs: 1em;
+$f-title: $fs * 1.3;
+$f-dscrptn: $fs * 1.2;
+$f-txt: $fs;
+
+@media (min-width: 1024px) {
+	$fs: 1em * 1.5 !global;
+}
 
 @mixin fontStyle(
 	$ff: $ff-main,
-	$fs: inherit,
+	$fs: $fs,
 	$fw: inherit,
 	$ls: normal,
 	$lh: normal,

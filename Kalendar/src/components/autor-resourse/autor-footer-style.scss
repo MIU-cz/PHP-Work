@@ -21,7 +21,7 @@ $color-text: #fff;
 	width: 100%;
 	box-sizing: border-box;
 	padding: 20px;
-	background-color: transparentize($color: $color-bg, $amount: 0.7);
+	background-color: transparentize($color: $color-bg, $amount: 0.55);
 
 	font-family: "Permanent Marker", cursive;
 	font-size: 12px;
@@ -68,9 +68,9 @@ $color-text: #fff;
 	}
 }
 
-@media (min-width: 768px) {
-	.autor {
-		position: fixed;
-		bottom: 0;
-	}
-}
+// @media (min-width: 1024px) {
+// 	.autor {
+// 		position: fixed;
+// 		bottom: 0;
+// 	}
+// }

@@ -2,21 +2,43 @@
 @import "_theme", "_font", "_season";
 @import "../components/autor-resourse/autor-footer-style.css";
 
+// ## Variables:
+@mixin Flexyble() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 body {
 	padding-top: 40px;
+	@include Flexyble();
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .kal_wraper {
-	width: fit-content;
+	// width: min-content;
+	width: max-content;
 	@include fontStyle();
+
 	margin: 0 auto;
 	padding: 40px;
 	border-radius: 20px;
+
+	@media (max-width: 416px) {
+		width: 100%;
+		font-size: 1em;
+	}
+}
+
+.footer_wraper {
+	width: 100%;
 }
 
 .kal_content {
+	width: 100%;
 	@include Flexyble();
-	flex-wrap: wrap;
+	flex-direction: column;
 	gap: 20px;
 
 	@media (min-width: 1024px) {
@@ -27,8 +49,13 @@ body {
 
 .kal_container,
 .task_container {
-	padding: 20px;
+	// width: 100%;
+	padding: 0.3em;
 	border-radius: 10px;
+
+	@media (min-width: 460px) {
+		padding: 1.5em;
+	}
 }
 
 .kal_container {
@@ -36,12 +63,37 @@ body {
 		width: 100%;
 		@include Flexyble();
 		justify-content: space-between;
-		padding: 10px 10px 20px;
+		padding: 10px 0 20px;
 
 		.btn_cal {
+			display: inline-block;
+			padding: 5px;
 			text-transform: capitalize;
 			font-weight: 700;
-			font-size: 1.2em;
+			font-size: $f-title;
+
+			// @media (min-width: 1024px) {
+			// 	font-size: $f-title * 1.25;
+			// }
+		}
+
+		.kal_navi {
+			@include Flexyble();
+
+			.btn_cal {
+				min-width: $f-title;
+				@include Flexyble();
+
+				// @media (min-width: 1024px) {
+				// 	min-width: $f-title * 1.25;
+				// }
+			}
+
+			svg {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
 		}
 	}
 
@@ -49,28 +101,95 @@ body {
 	.row_kal {
 		td,
 		th {
-			padding: 5px;
-			border: 1px solid;
 			text-align: center;
+			font-size: $f-dscrptn;
 
-			&:first-child {
-				border-left: transparent;
-			}
+			border: 1px solid;
+			border-left: transparent;
+			border-top: transparent;
 
 			&:last-child {
 				border-right: transparent;
 			}
 		}
 
-		&:first-child,
-		th {
-			border-top: transparent;
-		}
-
 		&:last-child {
 			td {
 				border-bottom: transparent;
 			}
+		}
+
+		a {
+			display: block;
+			padding: 5px;
+		}
+
+		// @media (min-width: 1024px) {
+		// 	font-size: $f-dscrptn * 1.25;
+		// }
+	}
+}
+
+.task_container {
+	.task_list {
+		max-width: 300px;
+		@include Flexyble();
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.task_item {
+		// min-width: 250px;
+		width: 100%;
+		@include Flexyble();
+		justify-content: space-between;
+		align-items: flex-start;
+		gap: 2em;
+
+		.item_container {
+			width: 100%;
+
+			p {
+				font-size: $f-dscrptn;
+				font-weight: 600;
+				word-break: break-all;
+			}
+			span {
+				font-size: $f-txt;
+				white-space: nowrap;
+			}
+		}
+
+		.btn_del {
+			display: block;
+			min-width: $f-dscrptn;
+
+			svg {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			color: $c-main-blue;
+
+			&:hover {
+				color: $c-main-red;
+			}
+		}
+	}
+
+	.task_form {
+		margin-top: 30px;
+		width: 100%;
+		@include Flexyble();
+		flex-direction: column;
+		gap: 10px;
+
+		.form_item {
+			width: 100%;
+			border-radius: 10px;
+			padding: 5px 10px;
+			font-size: $f-txt;
 		}
 	}
 }
