@@ -1,3 +1,7 @@
-- GitHub: <https://github.com/MIU-cz/PHP-Work/tree/main/ibaCZ-Blog>
-- Deploy: <http://miu.jecool.net/new_sites/ibaCZ-Blog/index.php>
-- Figma: <https://www.figma.com/file/XDXv9gJugZT7o9LDZ1UhpH/ibaCZ-Blog?type=design&node-id=1%3A14&mode=design&t=rdAte9VmPb49cM0q-1>
+- GitHub: <https://github.com/MIU-cz/PHP-Work/tree/main/Kalendar>
+- Deploy: <http://miu.jecool.net/new_sites/Kalendar/index.php>
+
+<img src="./docs/Screenshot 2023-09-19 045918.png" width=250>
+<img src="./docs/Screenshot 2023-09-19 045950.png" width=250>
+<img src="./docs/Screenshot 2023-09-19 050007.png" width=250>
+<img src="./docs/Screenshot 2023-09-19 050022.png" width=250>

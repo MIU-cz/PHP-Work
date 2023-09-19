@@ -2,6 +2,19 @@
 
 > => [ list of projects ]
 
+## Kalendar
+
+<img src="./Kalendar/docs/Screenshot 2023-09-19 045918.png" width=250>
+
+> ### Links
+
+- Popis práce na projektu: <https://miu-cz.github.io/PHP-Work/ibaCZ-Blog/>
+- GitHub: <https://github.com/MIU-cz/PHP-Work/tree/main/ibaCZ-Blog>
+- Deploy: <http://miu.jecool.net/new_sites/ibaCZ-Blog/index.php>
+- Figma: <https://www.figma.com/file/XDXv9gJugZT7o9LDZ1UhpH/ibaCZ-Blog?type=design&node-id=1%3A14&mode=design&t=rdAte9VmPb49cM0q-1>
+
+===========================
+
 ## Blog page with components & slider
 
 <img src="./ibaCZ-Blog/docs/Screenshot 2023-09-10 140548.png" width=250>

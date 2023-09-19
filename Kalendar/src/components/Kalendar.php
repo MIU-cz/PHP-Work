@@ -32,9 +32,9 @@ if ($tasks->num_rows > 0) {
 	<div class="kal_title">
 		<?php
 		echo '<div class="kal_navi">';
-		echo '<a class="btn_cal" href="?month=' . $new_month - 1 . '&year=' . $new_year . '">' . $kal_btn['prev'] . '</a>';
+		echo '<a class="btn_cal" href="?month=' . ($new_month - 1) . '&year=' . $new_year . '">' . $kal_btn['prev'] . '</a>';
 		echo '<a class="btn_cal" href="?month=' . $cur_month . '">' . $kal_btn['cur_month'] . '</a>';
-		echo '<a class="btn_cal" href="?month=' . $new_month + 1 . '&year=' . $new_year . '">' . $kal_btn['next'] . '</a>';
+		echo '<a class="btn_cal" href="?month=' . ($new_month + 1) . '&year=' . $new_year . '">' . $kal_btn['next'] . '</a>';
 		echo '</div>';
 		echo '<div class="kal_month">
 			<a class="btn_cal" href="?month=' . $new_month . '&year=' . $new_year . '">' . $cur_month_str . '</a></div>';
