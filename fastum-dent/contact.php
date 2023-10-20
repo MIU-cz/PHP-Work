@@ -31,3 +31,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		echo "neco jslo ne tak";
 	}
 }
+
+// mail() - toto je vestavěná funkce v PHP. pokud máte na svém serveru nakonfigurovaný smtp, bude vše fungovat bez problémů
