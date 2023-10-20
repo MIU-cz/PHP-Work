@@ -1,0 +1,76 @@
+<div class="contact-panel d-flex flex-wrap">
+	<form class="contact-panel__form" method="post" action="./contact.php" id="contactForm">
+		<div class="row">
+			<div class="col-sm-12">
+				<h4 class="contact-panel__title">Napište nám </h4>
+				<p class="contact-panel__desc mb-30">Potřebujete se s námi poradit, nebo se chcete jen objednat na
+					vyšetření? Nebojte se nám napsat.</p>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-6">
+				<div class="form-group"> <i class="icon-user form-group-icon"></i>
+					<input type="text" class="form-control" placeholder="Jméno a příjmení" id="contact-name"
+						   name="contact-name" value="" required>
+					<input type="text" class="form-control" placeholder="Vaše příjmení" id="contact-surname"
+						   name="contact-surname" value="" required>
+				</div>
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-sm-6 col-md-6 col-lg-6">
+				<div class="form-group"> <i class="icon-email form-group-icon"></i>
+					<input type="email" class="form-control" placeholder="E-mail" id="contact-email"
+						   name="contact-email" value="" required>
+				</div>
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-sm-6 col-md-6 col-lg-6">
+				<div class="form-group"> <i class="icon-phone form-group-icon"></i>
+					<input type="text" class="form-control" placeholder="Telefon" id="contact-Phone"
+						   name="contact-phone" value="" required>
+				</div>
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-sm-6 col-md-6 col-lg-6">
+				<div class="form-group"> <i class="icon-news form-group-icon"></i>
+					<select class="form-control" name="contact-service">
+						<option value="Vstupní prohlídka">Vstupní prohlídka</option>
+						<option value="Konzultace">Konzultace</option>
+						<option value="Objednání zákroku">Objednání zákroku</option>
+						<option value="Pravidelná kontrola">Pravidelná kontrola</option>
+					</select>
+				</div>
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-12">
+				<div class="form-group"> <i class="icon-alert form-group-icon"></i>
+					<textarea class="form-control" placeholder="Vaše zpráva" id="contact-message" name="contact-message"
+							  value=""></textarea>
+				</div>
+				<button type="submit" class="btn btn__secondary btn__rounded btn__block btn__xhight mt-10">
+					<span>Odeslat zprávu</span> <i class="icon-arrow-right"></i> </button>
+				<div class="contact-result"></div>
+			</div>
+			<!-- /.col-lg-12 -->
+		</div>
+		<!-- /.row -->
+	</form>
+	<div
+		 class="contact-panel__info d-flex flex-column justify-content-between bg-overlay bg-overlay-primary-gradient">
+		<div class="bg-img"><img src="assets/images/banners/1.jpg" alt="banner"></div>
+		<div>
+			<h4 class="contact-panel__title color-white">Rychlý kontakt</h4>
+			<p class="contact-panel__desc font-weight-bold color-white mb-30">Nebojte se nás kontaktovat. Rádi se s
+				vámiseznámíme a navrhneme optimální léčebný plán i pro vás.</p>
+		</div>
+		<div>
+			<ul class="contact__list list-unstyled mb-30">
+				<li> <i class="icon-phone"></i><a href="tel:+420739912998">+420 739 912 998</a> </li>
+				<li> <i class="icon-email"></i><a href="mailto:anna.cernysova@seznam.cz"> anna.cernysova@seznam.cz</a>
+				</li>
+				<li> <i class="icon-location"></i>Holandská 365/8, Praha 10<br>
+					(vstup do ordinace na rohu domu) </li>
+				<li> <i class="icon-clock"></i>Pondělí - Pátek: 7:30 - 17:00</li>
+			</ul>
+			<a href="#" class="btn btn__white btn__rounded btn__outlined">Ukázat na mapě</a>
+		</div>
+	</div>
+</div>
